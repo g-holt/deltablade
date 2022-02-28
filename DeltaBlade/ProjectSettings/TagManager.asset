@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Ground
   layers:
   - Default
   - TransparentFX
@@ -11,9 +12,9 @@ TagManager:
   - 
   - Water
   - UI
-  - Platforms
+  - Ground
   - Background
-  - 
+  - Knight
   - 
   - 
   - 
@@ -46,4 +47,7 @@ TagManager:
     locked: 0
   - name: Background
     uniqueID: 3262724809
+    locked: 0
+  - name: Knight
+    uniqueID: 3210394225
     locked: 0

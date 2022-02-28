@@ -13,6 +13,7 @@ public class PlayerMovement : MonoBehaviour
     Vector2 playerVelocity;
 
     bool hasHorizontalSpeed;
+    bool isJumping;
 
 
     void Start()
@@ -28,6 +29,15 @@ public class PlayerMovement : MonoBehaviour
     }
 
 
+    void OnCollisionEnter2D(Collision2D other) 
+    {
+        if(other.gameObject.CompareTag("Ground"))
+        {
+            isJumping = false;
+        }    
+    }
+
+
     void OnMove(InputValue value)
     {
         moveInput = value.Get<Vector2>();
@@ -35,10 +45,12 @@ public class PlayerMovement : MonoBehaviour
 
 
     void OnJump()
-    {Debug.Log("jump");
+    {
+        if(isJumping) { return; }
+        isJumping = true;
         playerVelocity = new Vector2(rb.velocity.x, jumpSpeed);
         rb.velocity = playerVelocity;
-        Debug.Log(rb.velocity);
+        Debug.Log(isJumping);
     }
 
 
