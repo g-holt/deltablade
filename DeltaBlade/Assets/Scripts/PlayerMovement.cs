@@ -11,15 +11,18 @@ public class PlayerMovement : MonoBehaviour
     Rigidbody2D rb;
     Vector2 moveInput;
     Vector2 playerVelocity;
+    Vector2 jumpInput;
     BoxCollider2D myFeetCollider;
+    Animator animator;
 
-    bool hasHorizontalSpeed;
+    bool canJump;
 
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         myFeetCollider = GetComponent<BoxCollider2D>();
+        animator = GetComponentInChildren<Animator>();
     }
 
     
@@ -30,9 +33,28 @@ public class PlayerMovement : MonoBehaviour
     }
 
 
+    void OnCollisionEnter2D(Collision2D other) 
+    {
+        if(other.gameObject.CompareTag("Ground"))
+        {
+            animator.SetBool("jump", false);
+        }    
+    }
+
+
     void OnMove(InputValue value)
     {
         moveInput = value.Get<Vector2>();
+    }
+
+
+    void MovePlayer()
+    {
+        playerVelocity = new Vector2(moveInput.x * moveSpeed, rb.velocity.y);
+        rb.velocity = playerVelocity;    
+        
+        bool hasHorizontalSpeed = Mathf.Abs(rb.velocity.x) > Mathf.Epsilon;
+        animator.SetBool("walk", hasHorizontalSpeed);
     }
 
 
@@ -40,23 +62,17 @@ public class PlayerMovement : MonoBehaviour
     {
         /* 2 */
         if(!myFeetCollider.IsTouchingLayers(LayerMask.GetMask("Ground"))) { return; }
-        if(!value.isPressed) { return; }
-
-        rb.velocity += new Vector2(0f, jumpSpeed);
-    }
-
-
-    void MovePlayer()
-    {
-        playerVelocity = new Vector2(moveInput.x * moveSpeed, rb.velocity.y);
-        rb.velocity = playerVelocity;        
+        if(!value.isPressed) { return; } 
+        
+        rb.velocity = new Vector2(0f, jumpSpeed);
+        animator.SetBool("jump", true);
     }
 
 
     void FlipSprite()
     {
         /* 1 */
-        hasHorizontalSpeed = Mathf.Abs(rb.velocity.x) > Mathf.Epsilon;
+        bool hasHorizontalSpeed = Mathf.Abs(rb.velocity.x) > Mathf.Epsilon;
         
         if(hasHorizontalSpeed)
         {
