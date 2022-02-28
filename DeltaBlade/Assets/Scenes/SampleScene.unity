@@ -326,7 +326,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1032242487
   m_SortingLayer: 2
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
@@ -1771,7 +1771,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -530163483
   m_SortingLayer: 1
-  m_SortingOrder: 2
+  m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
@@ -2588,7 +2588,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1474801474}
-  m_BodyType: 0
+  m_BodyType: 2
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -2608,17 +2608,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1237697198120617371, guid: abe1fe1e6c99749468d893233f5803ad, type: 3}
+      propertyPath: m_Simulated
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4561280085331041355, guid: abe1fe1e6c99749468d893233f5803ad, type: 3}
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4561280085331041355, guid: abe1fe1e6c99749468d893233f5803ad, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.52
+      value: -6.48
       objectReference: {fileID: 0}
     - target: {fileID: 4561280085331041355, guid: abe1fe1e6c99749468d893233f5803ad, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.88
+      value: -2.08
       objectReference: {fileID: 0}
     - target: {fileID: 4561280085331041355, guid: abe1fe1e6c99749468d893233f5803ad, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2650,6 +2654,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4561280085331041355, guid: abe1fe1e6c99749468d893233f5803ad, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5476382644050573871, guid: abe1fe1e6c99749468d893233f5803ad, type: 3}
+      propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6008725249764958499, guid: abe1fe1e6c99749468d893233f5803ad, type: 3}

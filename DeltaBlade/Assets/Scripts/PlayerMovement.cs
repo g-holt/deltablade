@@ -11,14 +11,15 @@ public class PlayerMovement : MonoBehaviour
     Rigidbody2D rb;
     Vector2 moveInput;
     Vector2 playerVelocity;
+    BoxCollider2D myFeetCollider;
 
     bool hasHorizontalSpeed;
-    bool isJumping;
 
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        myFeetCollider = GetComponent<BoxCollider2D>();
     }
 
     
@@ -29,28 +30,19 @@ public class PlayerMovement : MonoBehaviour
     }
 
 
-    void OnCollisionEnter2D(Collision2D other) 
-    {
-        if(other.gameObject.CompareTag("Ground"))
-        {
-            isJumping = false;
-        }    
-    }
-
-
     void OnMove(InputValue value)
     {
         moveInput = value.Get<Vector2>();
     }
 
 
-    void OnJump()
+    void OnJump(InputValue value)
     {
-        if(isJumping) { return; }
-        isJumping = true;
-        playerVelocity = new Vector2(rb.velocity.x, jumpSpeed);
-        rb.velocity = playerVelocity;
-        Debug.Log(isJumping);
+        /* 2 */
+        if(!myFeetCollider.IsTouchingLayers(LayerMask.GetMask("Ground"))) { return; }
+        if(!value.isPressed) { return; }
+
+        rb.velocity += new Vector2(0f, jumpSpeed);
     }
 
 
@@ -73,7 +65,6 @@ public class PlayerMovement : MonoBehaviour
     }
 
 
-
 }
 
 
@@ -89,6 +80,15 @@ public class PlayerMovement : MonoBehaviour
     the ~SIGN~ of the Velocity(Direction we're moving 5 or -5); so moving left changes localScale to -1 and moving right changes localScale
     to 1 effectively flipping the sprite to the correct direction
 
+
+***** 2 *****
+    Checking if the 2D Box Collider we have on the players feet is touching tiles with the 'Ground' Layer if not return so we can't 
+    continue to jump; then confirming the Jump button is pressed, if not return;
+
+    ~~~~ The myFeetCollider is set up so that the width is slightly smaller the width of our circle collider that represents the main
+    portion of the player so when the player runs into walls which tiles are also set up with the 'Ground' Layer the circle collider 
+    stops the player and does not allow the myFeetCollider to touch the tiles, which does not allow the player to jump and climb up 
+    the walls;
 
 
 */
