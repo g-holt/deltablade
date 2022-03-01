@@ -37,6 +37,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if(other.gameObject.CompareTag("Ground"))
         {
+            if(!myFeetCollider.IsTouchingLayers(LayerMask.GetMask("Ground"))) { return; }
             animator.SetBool("jump", false);
         }    
     }
