@@ -8,6 +8,8 @@ TagManager:
   - KnightDisarmed
   - KnightSword
   - KnightAxe
+  - Sword
+  - Axe
   layers:
   - Default
   - TransparentFX
