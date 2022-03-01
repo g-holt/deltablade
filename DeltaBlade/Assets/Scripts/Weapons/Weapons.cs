@@ -5,7 +5,6 @@ using UnityEngine;
 public class Weapons : MonoBehaviour
 {
     [SerializeField] WeaponType weaponType;
-    [SerializeField] float damage = 10f;
 
     CharacterWeaponSwitcher weaponSwitcher;
 
@@ -19,12 +18,7 @@ public class Weapons : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other) 
     {
         weaponSwitcher.SetCharacterWeapon(weaponType);
-    }
-
-
-    public float GetDamage()
-    {
-        return damage;
+        Destroy(gameObject);
     }
 
 

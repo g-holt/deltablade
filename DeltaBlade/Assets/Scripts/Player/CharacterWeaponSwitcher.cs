@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class CharacterWeaponSwitcher : MonoBehaviour
 {
@@ -19,6 +20,21 @@ public class CharacterWeaponSwitcher : MonoBehaviour
     }
 
 
+    void OnChangeWeapon(InputValue value)
+    {
+        if(Keyboard.current.digit1Key.wasPressedThisFrame)
+        {
+            currentWeapon = (WeaponType)1;
+        }
+        else
+        {
+            currentWeapon = (WeaponType)2;
+        }
+
+        SetCharacterActive(currentWeapon);
+    }
+
+
     void SetCharacterActive(WeaponType currentWeapon)
     {
         WeaponType weaponTypeIndex = 0;
@@ -33,7 +49,7 @@ public class CharacterWeaponSwitcher : MonoBehaviour
             {
                 character.gameObject.SetActive(false);
             }
-            Debug.Log(weaponTypeIndex);
+    
             weaponTypeIndex++;
         }
     }

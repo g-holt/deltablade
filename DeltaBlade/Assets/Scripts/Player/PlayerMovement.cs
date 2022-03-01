@@ -14,6 +14,7 @@ public class PlayerMovement : MonoBehaviour
     Vector2 jumpInput;
     BoxCollider2D myFeetCollider;
     Animator animator;
+    InputAction inputAction;
 
     bool canJump;
 
@@ -23,6 +24,7 @@ public class PlayerMovement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         myFeetCollider = GetComponent<BoxCollider2D>();
         animator = GetComponentInChildren<Animator>();
+
     }
 
     
@@ -80,7 +82,6 @@ public class PlayerMovement : MonoBehaviour
             transform.localScale = new Vector2(Mathf.Sign(rb.velocity.x), 1f);
         }
     }
-
 
 }
 
