@@ -4,31 +4,28 @@ using UnityEngine;
 
 public class CharacterWeaponSwitcher : MonoBehaviour
 {
-    public int currentCharacter = 0; 
+    public WeaponType currentWeapon; 
+    
 
-    CircleCollider2D mainPlayerCollider;
-
-
-    void Start()
+    void Start() 
     {
-        mainPlayerCollider = GetComponentInParent<CircleCollider2D>();
-        SetCharacterActive(currentCharacter);
+        SetCharacterActive(currentWeapon);    
     }
 
 
-    public void SetCharacterIndex(int index)
+    public void SetCharacterWeapon(WeaponType weapon)
     {
-        SetCharacterActive(index);
+        SetCharacterActive(weapon);
     }
 
 
-    void SetCharacterActive(int currentCharacter)
+    void SetCharacterActive(WeaponType currentWeapon)
     {
-        int characterIndex = 0;
+        WeaponType weaponTypeIndex = 0;
 
         foreach(Transform character in transform)
         {
-            if(characterIndex == currentCharacter)
+            if(weaponTypeIndex == currentWeapon)
             {
                 character.gameObject.SetActive(true);
             }
@@ -36,8 +33,8 @@ public class CharacterWeaponSwitcher : MonoBehaviour
             {
                 character.gameObject.SetActive(false);
             }
-            
-            characterIndex++;
+            Debug.Log(weaponTypeIndex);
+            weaponTypeIndex++;
         }
     }
 

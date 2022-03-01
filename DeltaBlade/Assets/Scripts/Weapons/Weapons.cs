@@ -4,15 +4,28 @@ using UnityEngine;
 
 public class Weapons : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] WeaponType weaponType;
+    [SerializeField] float damage = 10f;
+
+    CharacterWeaponSwitcher weaponSwitcher;
+
+
+    void Start() 
     {
-        
+        weaponSwitcher = FindObjectOfType<CharacterWeaponSwitcher>();
     }
 
-    // Update is called once per frame
-    void Update()
+
+    private void OnTriggerEnter2D(Collider2D other) 
     {
-        
+        weaponSwitcher.SetCharacterWeapon(weaponType);
     }
+
+
+    public float GetDamage()
+    {
+        return damage;
+    }
+
+
 }
