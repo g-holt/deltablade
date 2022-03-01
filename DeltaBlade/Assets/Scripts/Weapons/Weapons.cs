@@ -18,6 +18,16 @@ public class Weapons : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other) 
     {
         weaponSwitcher.SetCharacterWeapon(weaponType);
+
+        if(weaponType == (WeaponType)1)
+        {
+            weaponSwitcher.hasSword = true;
+        }
+        else if(weaponType == (WeaponType)2)
+        {
+            weaponSwitcher.hasAxe = true;
+        }
+        
         Destroy(gameObject);
     }
 

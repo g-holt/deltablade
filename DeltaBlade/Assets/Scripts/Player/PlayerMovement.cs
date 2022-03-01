@@ -8,13 +8,12 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float moveSpeed = 5f;
     [SerializeField] float jumpSpeed = 5f;
 
-    Rigidbody2D rb;
     Vector2 moveInput;
     Vector2 playerVelocity;
     Vector2 jumpInput;
+    Rigidbody2D rb;
     BoxCollider2D myFeetCollider;
     Animator animator;
-    InputAction inputAction;
 
     bool canJump;
 

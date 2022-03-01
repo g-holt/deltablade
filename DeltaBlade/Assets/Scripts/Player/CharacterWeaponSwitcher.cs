@@ -7,9 +7,13 @@ public class CharacterWeaponSwitcher : MonoBehaviour
 {
     public WeaponType currentWeapon; 
     
+    public bool hasSword;
+    public bool hasAxe;
 
     void Start() 
     {
+        hasSword = false;
+        hasAxe = false;
         SetCharacterActive(currentWeapon);    
     }
 
@@ -22,11 +26,11 @@ public class CharacterWeaponSwitcher : MonoBehaviour
 
     void OnChangeWeapon(InputValue value)
     {
-        if(Keyboard.current.digit1Key.wasPressedThisFrame)
+        if(Keyboard.current.digit1Key.wasPressedThisFrame && hasSword)
         {
             currentWeapon = (WeaponType)1;
         }
-        else
+        else if(Keyboard.current.digit2Key.wasPressedThisFrame && hasAxe)
         {
             currentWeapon = (WeaponType)2;
         }

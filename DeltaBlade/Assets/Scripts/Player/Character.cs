@@ -4,15 +4,21 @@ using UnityEngine;
 
 public class Character : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] bool canAttack;
+
+    Animator animator;
+
+
+    void Start() 
     {
-        
+        animator = GetComponent<Animator>();    
     }
 
-    // Update is called once per frame
-    void Update()
+
+    void OnFire()
     {
-        
+        if(!canAttack){ return; }
+        animator.SetBool("attack", true);
     }
+
 }
