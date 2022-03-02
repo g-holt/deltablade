@@ -2615,6 +2615,10 @@ Tilemap:
   m_TileColorArray:
   - m_RefCount: 68
     m_Data: {r: 1, g: 1, b: 1, a: 1}
+  - m_RefCount: 0
+    m_Data: {r: 3.4772e-41, g: 3.4772e-41, b: 3.4772e-41, a: 3.4772e-41}
+  - m_RefCount: 0
+    m_Data: {r: 3.4772e-41, g: 3.4772e-41, b: 3.4772e-41, a: 3.4772e-41}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2893,6 +2897,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1144206366242140058, guid: abe1fe1e6c99749468d893233f5803ad, type: 3}
+      propertyPath: canAttack
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2088768829609534027, guid: abe1fe1e6c99749468d893233f5803ad, type: 3}
+      propertyPath: canAttack
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3049790254763732275, guid: abe1fe1e6c99749468d893233f5803ad, type: 3}
       propertyPath: m_NotificationBehavior
       value: 1
@@ -2977,6 +2989,10 @@ PrefabInstance:
       propertyPath: currentCharacter
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5147621219061341173, guid: abe1fe1e6c99749468d893233f5803ad, type: 3}
+      propertyPath: canAttack
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6008725249764958499, guid: abe1fe1e6c99749468d893233f5803ad, type: 3}
       propertyPath: m_Name
       value: Player
@@ -2985,6 +3001,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 6196717470061812842, guid: abe1fe1e6c99749468d893233f5803ad, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 09e3008b62c15714d965d4315f19bbef, type: 2}
     - target: {fileID: 6196717470069075882, guid: abe1fe1e6c99749468d893233f5803ad, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -2997,10 +3017,18 @@ PrefabInstance:
       propertyPath: m_SortingLayerID
       value: -1084573071
       objectReference: {fileID: 0}
+    - target: {fileID: 6683287587424685102, guid: abe1fe1e6c99749468d893233f5803ad, type: 3}
+      propertyPath: canAttack
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7545487611323845280, guid: abe1fe1e6c99749468d893233f5803ad, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7545487611331148128, guid: abe1fe1e6c99749468d893233f5803ad, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 4c25a672a5547f947bf2915249c9ae9b, type: 2}
     - target: {fileID: 7671188356677245133, guid: abe1fe1e6c99749468d893233f5803ad, type: 3}
       propertyPath: currentCharacter
       value: 2
@@ -3017,5 +3045,9 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8689979181076465626, guid: abe1fe1e6c99749468d893233f5803ad, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 17f90688e347151459709068a8a34adf, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: abe1fe1e6c99749468d893233f5803ad, type: 3}

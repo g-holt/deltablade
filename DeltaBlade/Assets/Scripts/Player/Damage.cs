@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Character : MonoBehaviour
+public class Damage : MonoBehaviour
 {
     [SerializeField] bool canAttack;
 
@@ -18,7 +18,7 @@ public class Character : MonoBehaviour
     void OnFire()
     {
         if(!canAttack){ return; }
-        animator.SetBool("attack", true);
+        animator.SetTrigger("attack");
     }
 
 }
