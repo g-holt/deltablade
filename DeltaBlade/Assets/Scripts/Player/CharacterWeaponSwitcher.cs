@@ -52,12 +52,10 @@ public class CharacterWeaponSwitcher : MonoBehaviour
         foreach(Transform character in transform)
         {
             animator = character.gameObject.GetComponent<Animator>();
+            
             if(weaponTypeIndex == currentWeapon)
             {
-                //TODO: when switching mid jump the animation will walk in the air if moving or be idle instead of the jump animation
-                character.gameObject.SetActive(true);
-                animator.enabled = true;
-                playerMovement.SetAnimator(animator);
+                SwapCharacter(character);
             }
             else
             {
@@ -67,6 +65,15 @@ public class CharacterWeaponSwitcher : MonoBehaviour
     
             weaponTypeIndex++;
         }
+    }
+
+
+    void SwapCharacter(Transform character)
+    {
+        //TODO: when switching mid jump the animation will walk in the air if moving or be idle instead of the jump animation
+        character.gameObject.SetActive(true);
+        animator.enabled = true;
+        playerMovement.SetAnimator(animator);
     }
 
 }

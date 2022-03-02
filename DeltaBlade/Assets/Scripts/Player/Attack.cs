@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Damage : MonoBehaviour
+public class Attack : MonoBehaviour
 {
     [SerializeField] float damage = 10f;
 
@@ -18,6 +18,12 @@ public class Damage : MonoBehaviour
     void OnAttack()
     {
         animator.SetTrigger("attack");
+    }
+
+
+    public void DamageEnemy()
+    {
+        Debug.Log("Attack Damage: " + damage);
     }
 
 }
