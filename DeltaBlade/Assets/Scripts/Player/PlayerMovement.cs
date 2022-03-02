@@ -94,9 +94,7 @@ public class PlayerMovement : MonoBehaviour
         
         //Setup as press and release in InputActions so method is called once when button is pressed and again when button released
         if(value.isPressed)
-        {
-            if(AnimationState("jump")) { return; }
-            
+        {   
             ShieldUp();
         }
         if(!value.isPressed)
@@ -108,7 +106,11 @@ public class PlayerMovement : MonoBehaviour
 
     void ShieldUp()
     {
-        rb.velocity = new Vector2(0f, 0f);
+        if(!AnimationState("jump"))
+        {
+            rb.velocity = new Vector2(0f, 0f);
+        }
+
         ToggleAnimation("shield", true);
         ToggleAnimation("walk", false);
     }
