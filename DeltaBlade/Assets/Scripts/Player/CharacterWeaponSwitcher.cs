@@ -6,14 +6,20 @@ using UnityEngine.InputSystem;
 public class CharacterWeaponSwitcher : MonoBehaviour
 {
     public WeaponType currentWeapon; 
-    
+
     public bool hasSword;
     public bool hasAxe;
+
+    Animator animator;
+    PlayerMovement playerMovement;
+
 
     void Start() 
     {
         hasSword = false;
         hasAxe = false;
+        playerMovement = GetComponentInParent<PlayerMovement>();
+
         SetCharacterActive(currentWeapon);    
     }
 
@@ -45,13 +51,18 @@ public class CharacterWeaponSwitcher : MonoBehaviour
 
         foreach(Transform character in transform)
         {
+            animator = character.gameObject.GetComponent<Animator>();
             if(weaponTypeIndex == currentWeapon)
             {
+                //TODO: when switching mid jump the animation will walk in the air if moving or be idle instead of the jump animation
                 character.gameObject.SetActive(true);
+                animator.enabled = true;
+                playerMovement.SetAnimator(animator);
             }
             else
             {
                 character.gameObject.SetActive(false);
+                animator.enabled = false;
             }
     
             weaponTypeIndex++;

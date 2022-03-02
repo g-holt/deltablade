@@ -22,8 +22,6 @@ public class PlayerMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         myFeetCollider = GetComponent<BoxCollider2D>();
-        animator = GetComponentInChildren<Animator>();
-
     }
 
     
@@ -31,6 +29,12 @@ public class PlayerMovement : MonoBehaviour
     {
         MovePlayer();
         FlipSprite();
+    }
+
+
+    public void SetAnimator(Animator animator)
+    {
+        this.animator = animator;
     }
 
 
@@ -81,6 +85,7 @@ public class PlayerMovement : MonoBehaviour
             transform.localScale = new Vector2(Mathf.Sign(rb.velocity.x), 1f);
         }
     }
+
 
 }
 
