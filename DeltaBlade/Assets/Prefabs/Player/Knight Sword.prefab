@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 772462436272082480}
   - component: {fileID: 772462436292167632}
   - component: {fileID: 5811462573725365280}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Knight Sword
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -118,3 +118,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d367a3ec8ea81c64fbc3f176c91e2667, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damage: 10
