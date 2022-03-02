@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Damage : MonoBehaviour
 {
-    [SerializeField] bool canAttack;
+    [SerializeField] float damage = 10f;
 
     Animator animator;
 
@@ -15,9 +15,8 @@ public class Damage : MonoBehaviour
     }
 
 
-    void OnFire()
+    void OnAttack()
     {
-        if(!canAttack){ return; }
         animator.SetTrigger("attack");
     }
 

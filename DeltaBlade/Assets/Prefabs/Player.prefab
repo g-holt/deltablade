@@ -47,7 +47,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e83da790c17b134da2d24582b1497e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentCharacter: 0
+  currentWeapon: 0
+  hasSword: 0
+  hasAxe: 0
 --- !u!1 &6008725249764958499
 GameObject:
   m_ObjectHideFlags: 0
@@ -64,7 +66,7 @@ GameObject:
   - component: {fileID: 3280260223897097518}
   m_Layer: 8
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -98,14 +100,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Actions: {fileID: -944628639613478452, guid: 5fa09d8c3f21ffb4ab3782e0043054e1, type: 3}
-  m_NotificationBehavior: 0
+  m_NotificationBehavior: 1
   m_UIInputModule: {fileID: 0}
   m_DeviceLostEvent:
     m_PersistentCalls:
       m_Calls: []
   m_DeviceRegainedEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_ControlsChangedEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -162,6 +176,14 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: fe75d17b-76a6-4eba-ae61-f191954c7240
     m_ActionName: UI/TrackedDeviceOrientation
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 1e189ab9-7c3b-45dc-894a-0f8507e052c1
+    m_ActionName: Player/Jump[/Keyboard/space]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: e0ad868a-6285-4a2b-8372-22ccc1eeda1f
+    m_ActionName: Player/Change Weapon[/Keyboard/1,/Keyboard/2]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -329,11 +351,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 772462436284789776, guid: 2f3f27e86729853419ea3ad789718ca7, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 772462436284789776, guid: 2f3f27e86729853419ea3ad789718ca7, type: 3}
       propertyPath: m_TagString
       value: KnightSword
+      objectReference: {fileID: 0}
+    - target: {fileID: 5811462573725365280, guid: 2f3f27e86729853419ea3ad789718ca7, type: 3}
+      propertyPath: canAttack
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2f3f27e86729853419ea3ad789718ca7, type: 3}
@@ -415,7 +441,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2243185173216003285, guid: 0a824c40abceb6c46904acc8a37a24f8, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2243185173216003285, guid: 0a824c40abceb6c46904acc8a37a24f8, type: 3}
       propertyPath: m_TagString
@@ -432,6 +458,10 @@ PrefabInstance:
     - target: {fileID: 2243185173228453621, guid: 0a824c40abceb6c46904acc8a37a24f8, type: 3}
       propertyPath: m_SortingLayerID
       value: -1084573071
+      objectReference: {fileID: 0}
+    - target: {fileID: 2362244898231921466, guid: 0a824c40abceb6c46904acc8a37a24f8, type: 3}
+      propertyPath: canAttack
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a824c40abceb6c46904acc8a37a24f8, type: 3}

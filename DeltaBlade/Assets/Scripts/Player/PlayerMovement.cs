@@ -43,8 +43,20 @@ public class PlayerMovement : MonoBehaviour
         if(other.gameObject.CompareTag("Ground"))
         {
             if(!myFeetCollider.IsTouchingLayers(LayerMask.GetMask("Ground"))) { return; }
-            animator.SetBool("jump", false);
+
+            GroundCollision();
         }    
+    }
+
+
+    void GroundCollision()
+    {
+        ToggleAnimation("jump", false);
+
+        if(Mouse.current.rightButton.isPressed)
+        {
+            ShieldUp();
+        }
     }
 
 
@@ -56,11 +68,13 @@ public class PlayerMovement : MonoBehaviour
 
     void MovePlayer()
     {
+        if(AnimationState("shield")) { return; }
+
         playerVelocity = new Vector2(moveInput.x * moveSpeed, rb.velocity.y);
         rb.velocity = playerVelocity;    
         
         bool hasHorizontalSpeed = Mathf.Abs(rb.velocity.x) > Mathf.Epsilon;
-        animator.SetBool("walk", hasHorizontalSpeed);
+        ToggleAnimation("walk", hasHorizontalSpeed);
     }
 
 
@@ -71,7 +85,44 @@ public class PlayerMovement : MonoBehaviour
         if(!value.isPressed) { return; } 
         
         rb.velocity = new Vector2(0f, jumpSpeed);
-        animator.SetBool("jump", true);
+        ToggleAnimation("jump", true);
+    }
+
+
+    void OnDefend(InputValue value)
+    {
+        
+        //Setup as press and release in InputActions so method is called once when button is pressed and again when button released
+        if(value.isPressed)
+        {
+            if(AnimationState("jump")) { return; }
+            
+            ShieldUp();
+        }
+        if(!value.isPressed)
+        {
+            ToggleAnimation("shield", false);
+        }
+    }
+
+
+    void ShieldUp()
+    {
+        rb.velocity = new Vector2(0f, 0f);
+        ToggleAnimation("shield", true);
+        ToggleAnimation("walk", false);
+    }
+
+
+    void ToggleAnimation(string animation, bool toggle)
+    {   
+        animator.SetBool(animation, toggle);
+    }
+
+
+    bool AnimationState(string animation)
+    {
+        return animator.GetBool(animation);
     }
 
 
