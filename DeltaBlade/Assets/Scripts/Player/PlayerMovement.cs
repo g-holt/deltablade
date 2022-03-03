@@ -11,10 +11,11 @@ public class PlayerMovement : MonoBehaviour
     Vector2 moveInput;
     Vector2 playerVelocity;
     Vector2 jumpInput;
+    PlayerAttack attack;
     Rigidbody2D rb;
-    BoxCollider2D myFeetCollider;
     Animator animator;
-    Attack attack;
+    EnemyHealth enemyHealth;
+    BoxCollider2D myFeetCollider;
 
     bool canJump;
 
@@ -23,7 +24,7 @@ public class PlayerMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         myFeetCollider = GetComponent<BoxCollider2D>();
-        attack = GetComponentInChildren<Attack>();
+        attack = GetComponent<PlayerAttack>();
     }
 
     
@@ -31,12 +32,6 @@ public class PlayerMovement : MonoBehaviour
     {
         MovePlayer();
         FlipSprite();
-    }
-
-
-    public void SetAnimator(Animator animator)
-    {
-        this.animator = animator;
     }
 
 
@@ -48,21 +43,7 @@ public class PlayerMovement : MonoBehaviour
 
             GroundCollision();
         }    
-
-        // if(other.gameObject.CompareTag("Enemy"))
-        // {
-        //     attack.canDamage = true;
-        // }
     }
-
-
-    // void OnCollisionExit2D(Collision2D other) 
-    // {
-    //     if(other.gameObject.CompareTag("Enemy"))
-    //     {
-    //         attack.canDamage = false;
-    //     }    
-    // }
 
 
     void GroundCollision()
@@ -153,6 +134,12 @@ public class PlayerMovement : MonoBehaviour
         {
             transform.localScale = new Vector2(Mathf.Sign(rb.velocity.x), 1f);
         }
+    }
+
+
+    public void SetAnimator(Animator animator)
+    {
+        this.animator = animator;
     }
 
 

@@ -11,6 +11,7 @@ public class CharacterWeaponSwitcher : MonoBehaviour
     public bool hasAxe;
 
     Animator animator;
+    PlayerAttack playerAttack;
     PlayerMovement playerMovement;
 
 
@@ -19,6 +20,7 @@ public class CharacterWeaponSwitcher : MonoBehaviour
         hasSword = false;
         hasAxe = false;
         playerMovement = GetComponentInParent<PlayerMovement>();
+        playerAttack = GetComponentInParent<PlayerAttack>();
 
         SetCharacterActive(currentWeapon);    
     }
@@ -74,6 +76,7 @@ public class CharacterWeaponSwitcher : MonoBehaviour
         character.gameObject.SetActive(true);
         animator.enabled = true;
         playerMovement.SetAnimator(animator);
+        playerAttack.SetAnimator(animator);
     }
 
 }

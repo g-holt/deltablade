@@ -30,6 +30,7 @@ public class Enemy : MonoBehaviour
     
     void Update()
     {
+        if(!enemyHealth.isAlive) { return; }
         Move();
     }
 
