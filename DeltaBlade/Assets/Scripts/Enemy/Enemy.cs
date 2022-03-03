@@ -2,13 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyMovement : MonoBehaviour
+public class Enemy : MonoBehaviour
 {
     [SerializeField] float moveSpeed = 5f;
+    [SerializeField] float damage = 5f;
 
     Rigidbody2D rb;
     Animator animator;
     BoxCollider2D playerFeetCollider;
+    PlayerHealth playerHealth;
 
     float moveDirection;
     bool isAttacking;
@@ -20,6 +22,7 @@ public class EnemyMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        playerHealth = FindObjectOfType<PlayerHealth>();
     }
 
     
@@ -102,6 +105,14 @@ public class EnemyMovement : MonoBehaviour
             wasFlipped = true;
             FlipSprite();
         }
+    }
+
+
+    void DamagePlayer()
+    {
+        if(!isAttacking) { return; }
+        
+        playerHealth.ReduceHealth(damage);
     }
 
 

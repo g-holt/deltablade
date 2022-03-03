@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 376895150836860952}
   - component: {fileID: 376895150820818904}
   - component: {fileID: 376895150819456216}
+  - component: {fileID: 8836576504621287312}
   - component: {fileID: 376895150831518200}
   - component: {fileID: 121341833184452935}
-  - component: {fileID: 8836576504621287312}
   m_Layer: 9
   m_Name: Basic Enemy Sword
   m_TagString: Enemy
@@ -126,6 +126,32 @@ CircleCollider2D:
   m_Offset: {x: 0, y: -0.16}
   serializedVersion: 2
   m_Radius: 0.34
+--- !u!61 &8836576504621287312
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 376895150824108600}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.43, y: -0.63646865}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.07233882, y: 0.41657066}
+  m_EdgeRadius: 0
 --- !u!95 &376895150831518200
 Animator:
   serializedVersion: 4
@@ -159,29 +185,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 2
---- !u!61 &8836576504621287312
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 376895150824108600}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.43, y: -0.63646865}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.07233882, y: 0.41657066}
-  m_EdgeRadius: 0
+  damage: 5

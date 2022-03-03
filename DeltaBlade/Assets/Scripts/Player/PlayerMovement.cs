@@ -140,6 +140,12 @@ public class PlayerMovement : MonoBehaviour
     }
 
 
+    public Animator GetAnimator()
+    {
+        return animator;
+    }
+
+
 }
 
 
