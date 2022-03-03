@@ -7,11 +7,15 @@ public class Attack : MonoBehaviour
     [SerializeField] float damage = 10f;
 
     Animator animator;
+    EnemyHealth enemyHealth;
+
+    public bool canDamage; 
 
 
     void Start() 
     {
         animator = GetComponent<Animator>();    
+        enemyHealth = FindObjectOfType<EnemyHealth>();
     }
 
 
@@ -23,7 +27,7 @@ public class Attack : MonoBehaviour
 
     public void DamageEnemy()
     {
-        Debug.Log("Attack Damage: " + damage);
+        enemyHealth.ReduceEnemyHealth(damage);
     }
 
 }

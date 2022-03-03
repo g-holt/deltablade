@@ -11,6 +11,7 @@ public class Enemy : MonoBehaviour
     Animator animator;
     BoxCollider2D playerFeetCollider;
     PlayerHealth playerHealth;
+    EnemyHealth enemyHealth;
 
     float moveDirection;
     bool isAttacking;
@@ -22,6 +23,7 @@ public class Enemy : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        enemyHealth = GetComponent<EnemyHealth>();
         playerHealth = FindObjectOfType<PlayerHealth>();
     }
 
@@ -38,6 +40,8 @@ public class Enemy : MonoBehaviour
 
         if(other.gameObject.CompareTag("Player") && other.collider != playerFeetCollider)
         {
+            enemyHealth.canBeDamaged = true;
+
             FacePlayer(other.gameObject.transform);
             AttackPlayer(other.gameObject.transform);
         }    
@@ -55,6 +59,7 @@ public class Enemy : MonoBehaviour
             }
 
             isAttacking = false;
+            enemyHealth.canBeDamaged = false;
             animator.SetBool("attack", false);
         }    
     }

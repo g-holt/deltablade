@@ -14,6 +14,7 @@ public class PlayerMovement : MonoBehaviour
     Rigidbody2D rb;
     BoxCollider2D myFeetCollider;
     Animator animator;
+    Attack attack;
 
     bool canJump;
 
@@ -22,6 +23,7 @@ public class PlayerMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         myFeetCollider = GetComponent<BoxCollider2D>();
+        attack = GetComponentInChildren<Attack>();
     }
 
     
@@ -46,7 +48,21 @@ public class PlayerMovement : MonoBehaviour
 
             GroundCollision();
         }    
+
+        // if(other.gameObject.CompareTag("Enemy"))
+        // {
+        //     attack.canDamage = true;
+        // }
     }
+
+
+    // void OnCollisionExit2D(Collision2D other) 
+    // {
+    //     if(other.gameObject.CompareTag("Enemy"))
+    //     {
+    //         attack.canDamage = false;
+    //     }    
+    // }
 
 
     void GroundCollision()

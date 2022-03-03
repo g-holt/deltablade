@@ -2,29 +2,28 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerHealth : MonoBehaviour
+public class EnemyHealth : MonoBehaviour
 {
     [SerializeField] float health = 100f;
 
     Animator animator;
-    PlayerMovement playerMovement;
-    
+
+    public bool canBeDamaged;
 
     void Start()
     {
         animator = GetComponent<Animator>();
-        playerMovement = GetComponent<PlayerMovement>();
     }
 
 
-    public void ReduceHealth(float damage)
+    public void ReduceEnemyHealth(float damage)
     {
-        health -= damage;
-        //Debug.Log(health);
+        if(!canBeDamaged) { return; }
 
+        health -= damage;
+        Debug.Log(health);
         if(health <= 0)
         {
-            animator = playerMovement.GetAnimator();
             animator.SetBool("dead", true);
         }
     }

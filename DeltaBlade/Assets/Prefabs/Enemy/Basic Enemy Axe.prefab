@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 7131954913327016418}
   - component: {fileID: 3384666521567289422}
   - component: {fileID: 399270092859212045}
+  - component: {fileID: 5682624836159880486}
   m_Layer: 9
   m_Name: Basic Enemy Axe
   m_TagString: Enemy
@@ -186,3 +187,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 5
   damage: 10
+--- !u!114 &5682624836159880486
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3384666521576772494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cf9da7ed1752b14e80076c4e14b6bdb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
