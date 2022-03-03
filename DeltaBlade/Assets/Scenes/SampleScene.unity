@@ -136,11 +136,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5398497514941978536, guid: 72d179ea1b4461e41b64b17913ffc1eb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.39
+      value: -1.37
       objectReference: {fileID: 0}
     - target: {fileID: 5398497514941978536, guid: 72d179ea1b4461e41b64b17913ffc1eb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.22
+      value: -1.68
       objectReference: {fileID: 0}
     - target: {fileID: 5398497514941978536, guid: 72d179ea1b4461e41b64b17913ffc1eb, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3262,7 +3262,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 121341833184452935, guid: 1d2b82a7370416244bf120fd7cb75cdb, type: 3}
       propertyPath: moveSpeed
-      value: 5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 376895150824108600, guid: 1d2b82a7370416244bf120fd7cb75cdb, type: 3}
       propertyPath: m_Name
@@ -3286,11 +3286,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 376895150824599064, guid: 1d2b82a7370416244bf120fd7cb75cdb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.05
+      value: 4.04
       objectReference: {fileID: 0}
     - target: {fileID: 376895150824599064, guid: 1d2b82a7370416244bf120fd7cb75cdb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.35
+      value: -2.5
       objectReference: {fileID: 0}
     - target: {fileID: 376895150824599064, guid: 1d2b82a7370416244bf120fd7cb75cdb, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3397,6 +3397,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Knight8_Axe
       objectReference: {fileID: 0}
+    - target: {fileID: 3384666521580101230, guid: d9184557a4aa72049be5c25dd50fa012, type: 3}
+      propertyPath: m_LinearDrag
+      value: 10.83
+      objectReference: {fileID: 0}
+    - target: {fileID: 3384666521580101230, guid: d9184557a4aa72049be5c25dd50fa012, type: 3}
+      propertyPath: m_Constraints
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7131954913327016418, guid: d9184557a4aa72049be5c25dd50fa012, type: 3}
       propertyPath: m_Offset.x
       value: 0.43
@@ -3420,11 +3428,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4561280085331041355, guid: abe1fe1e6c99749468d893233f5803ad, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.45
+      value: -7.526
       objectReference: {fileID: 0}
     - target: {fileID: 4561280085331041355, guid: abe1fe1e6c99749468d893233f5803ad, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.453
+      value: -3.5
       objectReference: {fileID: 0}
     - target: {fileID: 4561280085331041355, guid: abe1fe1e6c99749468d893233f5803ad, type: 3}
       propertyPath: m_LocalPosition.z
