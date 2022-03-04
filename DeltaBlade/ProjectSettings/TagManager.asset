@@ -11,6 +11,7 @@ TagManager:
   - Sword
   - Axe
   - Enemy
+  - Decoration
   layers:
   - Default
   - TransparentFX
@@ -23,7 +24,7 @@ TagManager:
   - Knight
   - Enemy
   - Weapon
-  - 
+  - Decoration
   - 
   - 
   - 
@@ -50,6 +51,9 @@ TagManager:
     locked: 0
   - name: Background
     uniqueID: 3262724809
+    locked: 0
+  - name: Decoration
+    uniqueID: 2261553663
     locked: 0
   - name: Platforms
     uniqueID: 3044870965
