@@ -12,6 +12,7 @@ TagManager:
   - Axe
   - Enemy
   - Decoration
+  - Platforms
   layers:
   - Default
   - TransparentFX
@@ -25,7 +26,7 @@ TagManager:
   - Enemy
   - Weapon
   - Decoration
-  - 
+  - Platforms
   - 
   - 
   - 
