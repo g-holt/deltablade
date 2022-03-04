@@ -7,6 +7,7 @@ public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] float moveSpeed = 5f;
     [SerializeField] float jumpSpeed = 5f;
+    [SerializeField] float climbSpeed = 5f;
 
     Vector2 moveInput;
     Vector2 playerVelocity;
@@ -16,15 +17,20 @@ public class PlayerMovement : MonoBehaviour
     Animator animator;
     EnemyHealth enemyHealth;
     BoxCollider2D myFeetCollider;
+    CapsuleCollider2D myBodyCollider;
 
     bool canJump;
+    float gravityScaleAtStart;
 
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        myFeetCollider = GetComponent<BoxCollider2D>();
         attack = GetComponent<PlayerAttack>();
+        myFeetCollider = GetComponent<BoxCollider2D>();
+        myBodyCollider = GetComponent<CapsuleCollider2D>();
+        
+        gravityScaleAtStart = rb.gravityScale;
     }
 
     
@@ -57,6 +63,24 @@ public class PlayerMovement : MonoBehaviour
     }
 
 
+    // private void OnTriggerEnter2D(Collider2D other) 
+    // {
+    //     if(other.gameObject.CompareTag("Climbing"))
+    //     {
+    //         rb.gravityScale = 0;
+    //     }    
+    // }
+
+    
+    private void OnTriggerExit2D(Collider2D other) 
+    {
+        if(other.gameObject.CompareTag("Climbing"))
+        {
+            rb.gravityScale = gravityScaleAtStart;
+        }    
+    }
+
+
     void OnMove(InputValue value)
     {
         moveInput = value.Get<Vector2>();
@@ -83,6 +107,18 @@ public class PlayerMovement : MonoBehaviour
         
         rb.velocity = new Vector2(0f, jumpSpeed);
         ToggleAnimation("jump", true);
+    }
+
+
+    void OnClimb()
+    {
+        if(!myBodyCollider.IsTouchingLayers(LayerMask.GetMask("Climbing"))) 
+        { 
+            rb.gravityScale = gravityScaleAtStart;
+            return; 
+        }
+        
+        rb.velocity = new Vector2(0f, climbSpeed);
     }
 
 
