@@ -6,16 +6,14 @@ public class Weapons : MonoBehaviour
 {
     [SerializeField] WeaponType weaponType;
 
-    Canvas canvas;
+    WeaponCanvas weaponCanvas;
     CharacterWeaponSwitcher weaponSwitcher;
 
 
     void Start() 
     {
-        canvas = FindObjectOfType<Canvas>();
+        weaponCanvas = GetComponentInParent<WeaponCanvas>();
         weaponSwitcher = FindObjectOfType<CharacterWeaponSwitcher>();
-
-        SetWeaponCanvasImage(gameObject.name, false);
     }
 
 
@@ -23,29 +21,19 @@ public class Weapons : MonoBehaviour
     {
         if(weaponType == (WeaponType)1)
         {
+            weaponCanvas.hasSword = true;
             weaponSwitcher.hasSword = true;
         }
         else if(weaponType == (WeaponType)2)
         {
+            weaponCanvas.hasAxe = true;
             weaponSwitcher.hasAxe = true;
         }
-        
+
         weaponSwitcher.SetCharacterWeapon(weaponType);
+        weaponCanvas.SetWeaponCanvasImage(gameObject.name, true);
 
-        SetWeaponCanvasImage(gameObject.name, true);
         Destroy(gameObject);
-    }
-
-
-    public void SetWeaponCanvasImage(string name, bool state)
-    {
-        foreach(Transform weaponImage in canvas.transform)
-        {
-            if(weaponImage.name == name)
-            {
-                weaponImage.gameObject.SetActive(state);
-            }
-        }
     }
 
 }
