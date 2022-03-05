@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Tilemaps;
 using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
@@ -8,16 +9,18 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float moveSpeed = 5f;
     [SerializeField] float jumpSpeed = 5f;                                          
 
+    Transform tile;
     Vector2 moveInput;
-    Vector2 playerVelocity;
     Vector2 jumpInput;
-    PlayerAttack attack;
+    Vector2 playerVelocity;
+    Lever lever;
     Rigidbody2D rb;
+    //Tilemap tilemap;
     Animator animator;
+    PlayerAttack attack;
     EnemyHealth enemyHealth;
     BoxCollider2D myFeetCollider;
     CapsuleCollider2D myBodyCollider;
-    Lever lever;
 
     bool canJump;
     float gravityScaleAtStart;
@@ -49,6 +52,14 @@ public class PlayerMovement : MonoBehaviour
             
             GroundCollision();
         }     
+
+        if(other.gameObject.CompareTag("Breakable"))
+        {Debug.Log("here");
+            tile = other.gameObject.GetComponent<Transform>();
+            Destroy(tile, 1f);
+        }
+
+        
     }
 
 
@@ -125,6 +136,7 @@ public class PlayerMovement : MonoBehaviour
         lever.PullLever();
     }
 
+
     void FlipSprite()
     {
         /* 1 */
@@ -135,6 +147,7 @@ public class PlayerMovement : MonoBehaviour
             transform.localScale = new Vector2(Mathf.Sign(rb.velocity.x), 1f);
         }
     }
+
 
     void ToggleAnimation(string animation, bool toggle)
     {   

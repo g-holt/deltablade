@@ -14,6 +14,7 @@ TagManager:
   - Decoration
   - Platforms
   - Climbing
+  - Breakable
   layers:
   - Default
   - TransparentFX
@@ -23,14 +24,14 @@ TagManager:
   - UI
   - Ground
   - Background
-  - Knight
+  - Player
   - Enemy
   - Weapon
   - Decoration
   - Platforms
   - Climbing
-  - 
-  - 
+  - Lever
+  - Breakable
   - 
   - 
   - 
@@ -56,6 +57,9 @@ TagManager:
     locked: 0
   - name: Decoration
     uniqueID: 2261553663
+    locked: 0
+  - name: Breakable
+    uniqueID: 3016034411
     locked: 0
   - name: Platforms
     uniqueID: 3044870965

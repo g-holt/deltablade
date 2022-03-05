@@ -47,8 +47,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75783c2ab0f9dae4780bf5cc67e50a59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  leverOpen: {fileID: 8342352347113533060}
-  leverClosed: {fileID: 8342232377653954752}
+  leverPulled: {fileID: 8342352347113533060}
+  leverNotPulled: {fileID: 8342232377653954752}
 --- !u!61 &7326806352057233114
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -84,7 +84,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1345937758924298, guid: aea2031baec57684c94b0cb1a902dd8b, type: 3}
       propertyPath: m_Name
-      value: Lever Open
+      value: Lever Pulled
       objectReference: {fileID: 0}
     - target: {fileID: 1345937758924298, guid: aea2031baec57684c94b0cb1a902dd8b, type: 3}
       propertyPath: m_Layer
@@ -167,7 +167,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1307837508803308, guid: d74fca2a20f3b9a4cbd82b9ff4ba2891, type: 3}
       propertyPath: m_Name
-      value: Lever Closed
+      value: Lever Not Pulled
       objectReference: {fileID: 0}
     - target: {fileID: 1307837508803308, guid: d74fca2a20f3b9a4cbd82b9ff4ba2891, type: 3}
       propertyPath: m_Layer

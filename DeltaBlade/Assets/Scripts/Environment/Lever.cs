@@ -5,25 +5,28 @@ using UnityEngine.InputSystem;
 
 public class Lever : MonoBehaviour
 {
-    [SerializeField] GameObject leverOpen;
-    [SerializeField] GameObject leverClosed;
+    [SerializeField] GameObject leverPulled;
+    [SerializeField] GameObject leverNotPulled;
 
+    ExitDoor exitDoor;
     BoxCollider2D leverCollider;
 
 
     void Start() 
     {
-        leverOpen.SetActive(false);
-        leverClosed.SetActive(true);    
+        leverPulled.SetActive(false);
+        leverNotPulled.SetActive(true);    
 
+        exitDoor = FindObjectOfType<ExitDoor>();
         leverCollider = GetComponent<BoxCollider2D>();
     }
 
 
     public void PullLever()
     {
-        Debug.Log("here");
-        leverOpen.SetActive(true);
-        leverClosed.SetActive(false);
+        leverPulled.SetActive(true);
+        leverNotPulled.SetActive(false);
+
+        exitDoor.OpenDoor();
     }
 }
