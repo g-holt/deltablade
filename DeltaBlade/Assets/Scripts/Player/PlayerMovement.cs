@@ -9,13 +9,11 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float moveSpeed = 5f;
     [SerializeField] float jumpSpeed = 5f;                                          
 
-    Transform tile;
     Vector2 moveInput;
     Vector2 jumpInput;
     Vector2 playerVelocity;
     Lever lever;
     Rigidbody2D rb;
-    //Tilemap tilemap;
     Animator animator;
     PlayerAttack attack;
     EnemyHealth enemyHealth;
@@ -52,14 +50,6 @@ public class PlayerMovement : MonoBehaviour
             
             GroundCollision();
         }     
-
-        if(other.gameObject.CompareTag("Breakable"))
-        {Debug.Log("here");
-            tile = other.gameObject.GetComponent<Transform>();
-            Destroy(tile, 1f);
-        }
-
-        
     }
 
 
