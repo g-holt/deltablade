@@ -207,7 +207,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 3
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -226,7 +226,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.04272628, y: -0.4595679}
+  m_Offset: {x: 0.04272628, y: -0.45239615}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -237,7 +237,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.4456029, y: 0.08086419}
+  m_Size: {x: 0.4456029, y: 0.06652069}
   m_EdgeRadius: 0
 --- !u!70 &4613617487212514520
 CapsuleCollider2D:
@@ -268,7 +268,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
-  jumpSpeed: 5
+  jumpSpeed: 10
 --- !u!114 &7929184035345767932
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -308,6 +308,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcbbaee2fc91fd541957dc4d82b9ee76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameOverCanvas: {fileID: 0}
 --- !u!1001 &6865596667441896378
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -317,7 +318,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 772462436272082480, guid: 2f3f27e86729853419ea3ad789718ca7, type: 3}
       propertyPath: m_SortingLayer
-      value: 5
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 772462436272082480, guid: 2f3f27e86729853419ea3ad789718ca7, type: 3}
       propertyPath: m_SortingOrder
@@ -491,7 +492,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2243185173228453621, guid: 0a824c40abceb6c46904acc8a37a24f8, type: 3}
       propertyPath: m_SortingLayer
-      value: 5
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2243185173228453621, guid: 0a824c40abceb6c46904acc8a37a24f8, type: 3}
       propertyPath: m_SortingOrder
