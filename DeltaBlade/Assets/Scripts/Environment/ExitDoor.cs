@@ -26,9 +26,9 @@ public class ExitDoor : MonoBehaviour
 
 
     void OnTriggerEnter2D(Collider2D other) 
-    {Debug.Log("here");
+    {
         if(isOpen && doorCollider.IsTouchingLayers(LayerMask.GetMask("Player")))
-        {Debug.Log("here 1");
+        {
             sceneLoader.PlayAgain();
         }
     }
