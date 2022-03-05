@@ -85,7 +85,7 @@ public class PlayerMovement : MonoBehaviour
     void OnJump(InputValue value)
     {
         /* 2 */
-        if(!TouchingLayer(myFeetCollider, "Ground"))
+        if(!TouchingLayer(myFeetCollider, "Ground")) { return; }
         if(!value.isPressed) { return; } 
         
         rb.velocity = new Vector2(0f, jumpSpeed);
