@@ -9,10 +9,11 @@ public class Enemy : MonoBehaviour
     [SerializeField] float attackDelay = 1f;
 
     Rigidbody2D rb;
+    Transform player;
     Animator animator;
-    BoxCollider2D playerFeetCollider;
-    PlayerHealth playerHealth;
     EnemyHealth enemyHealth;
+    PlayerHealth playerHealth;
+    BoxCollider2D playerFeetCollider;
 
     float moveDirection;
     bool isAttacking;
@@ -27,7 +28,6 @@ public class Enemy : MonoBehaviour
         enemyHealth = GetComponent<EnemyHealth>();
 
         playerHealth = FindObjectOfType<PlayerHealth>();
-        playerFeetCollider = FindObjectOfType<BoxCollider2D>();
     }
 
     
@@ -39,30 +39,20 @@ public class Enemy : MonoBehaviour
     }
 
 
-    // void OnCollisionEnter2D(Collision2D other) 
-    // {
-    //     playerFeetCollider = other.gameObject.GetComponent<BoxCollider2D>();
+    void OnCollisionEnter2D(Collision2D other) 
+    {
+        playerFeetCollider = other.gameObject.GetComponent<BoxCollider2D>();
 
-    //     if(other.gameObject.CompareTag("Player") && other.collider != playerFeetCollider)
-    //     {
-    //         enemyHealth.canBeDamaged = true;
-
-    //         FacePlayer(other.gameObject.transform);
-    //         AttackPlayer(other.gameObject.transform);
-    //     }    
-    // }
-
-    IEnumerator OnCollisionStay2D(Collision2D other) 
-    { 
         if(other.gameObject.CompareTag("Player") && other.collider != playerFeetCollider)
         {
             enemyHealth.canBeDamaged = true;
+            player = other.gameObject.transform;
 
-            FacePlayer(other.gameObject.transform);
-            AttackPlayer(other.gameObject.transform);
+            animator.SetBool("walk", false);
+
+            FacePlayer(player);
+            AttackPlayer(player);
         }    
-
-        yield return new WaitForSeconds(attackDelay);
     }
 
 
@@ -106,24 +96,29 @@ public class Enemy : MonoBehaviour
     void AttackPlayer(Transform player)
     {
         if (player == null) { return; }
-        Debug.Log("Attack Player");
-        animator.SetBool("walk", false);
-        animator.SetBool("attack", true);
 
-        //StartCoroutine("DelayNextAttack");
+        animator.SetBool("attack", true);
     }
 
 
-    // IEnumerator DelayNextAttack()
-    // {
-    //     animator.SetBool("attack", false);
-    //     animator.SetBool("idle", true);
-    //     //Debug.Log("Delay Next Attack");
-    //     yield return new WaitForSeconds(attackDelay);
+    void DelayAttack()
+    {
+        StartCoroutine("DelayNextAttack");
+    }
 
-    //     animator.SetBool("idle", false);
-    //     animator.SetBool("attack", true);
-    // }
+
+    IEnumerator DelayNextAttack()
+    {
+        animator.SetBool("attack", false);
+
+        yield return new WaitForSeconds(attackDelay);
+
+        if(isAttacking)
+        {
+            AttackPlayer(player);
+        }
+
+    }
 
 
     void FacePlayer(Transform player)

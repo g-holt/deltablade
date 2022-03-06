@@ -6,8 +6,9 @@ public class EnemyHealth : MonoBehaviour
 {
     [SerializeField] float health = 100f;
 
-    Animator animator;
     Rigidbody2D rb;
+    Animator animator;
+    CapsuleCollider2D enemyBodyCollider;
 
     public bool canBeDamaged;
     public bool isAlive;
@@ -16,8 +17,9 @@ public class EnemyHealth : MonoBehaviour
     {   
         isAlive = true;
 
-        animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
+        enemyBodyCollider = GetComponent<CapsuleCollider2D>();
     }
 
 
@@ -31,6 +33,8 @@ public class EnemyHealth : MonoBehaviour
         {
             isAlive = false;
             rb.velocity = new Vector2(0f, 0f);
+            enemyBodyCollider.enabled = false;
+
             animator.SetBool("dead", true);
         }
     }

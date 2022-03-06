@@ -56,8 +56,8 @@ public class PlayerHealth : MonoBehaviour
 
         yield return new WaitForSeconds(1f);
         
-        //deathHandler.GameOver();
-        sceneLoader.PlayAgain();
+        deathHandler.GameOver();
+        //sceneLoader.PlayAgain();
     }
 
 }
