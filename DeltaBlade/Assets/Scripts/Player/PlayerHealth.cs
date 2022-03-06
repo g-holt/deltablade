@@ -5,14 +5,20 @@ using UnityEngine;
 public class PlayerHealth : MonoBehaviour
 {
     [SerializeField] float health = 100f;
+    [SerializeField] [Range(0f, 1f)] float shieldPercent = .75f;
 
     Animator animator;
     DeathHandler deathHandler;
     PlayerMovement playerMovement;
+    SceneLoader sceneLoader;
+
+    public bool shieldUp;
     
 
     void Start()
     {
+        sceneLoader = FindObjectOfType<SceneLoader>();
+
         animator = GetComponent<Animator>();
         deathHandler = GetComponent<DeathHandler>();
         playerMovement = GetComponent<PlayerMovement>();
@@ -21,23 +27,37 @@ public class PlayerHealth : MonoBehaviour
 
     public void ReduceHealth(float damage)
     {
+        if(shieldUp)
+        {
+            damage = damage * shieldPercent;
+        }
+
         health -= damage;
 
         if(health <= 0)
         {
-            animator = playerMovement.GetAnimator();
-            animator.SetBool("dead", true);
-            playerMovement.enabled = false;
-            
-            StartCoroutine("HandleDeath");
+            PlayerDeath();
         }
+    }
+
+
+    public void PlayerDeath()
+    {
+        animator = playerMovement.GetAnimator();
+        animator.SetBool("dead", true);
+        playerMovement.enabled = false;
+
+        StartCoroutine("HandleDeath");
     }
 
 
     IEnumerator HandleDeath()
     {
+
         yield return new WaitForSeconds(1f);
-        deathHandler.GameOver();
+        
+        //deathHandler.GameOver();
+        sceneLoader.PlayAgain();
     }
 
 }

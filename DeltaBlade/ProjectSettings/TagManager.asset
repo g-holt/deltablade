@@ -15,6 +15,7 @@ TagManager:
   - Platforms
   - Climbing
   - Breakable
+  - Hazards
   layers:
   - Default
   - TransparentFX
@@ -32,8 +33,8 @@ TagManager:
   - Climbing
   - Lever
   - Breakable
-  - 
-  - 
+  - Hazards
+  - Exit Door
   - 
   - 
   - 
@@ -58,7 +59,10 @@ TagManager:
   - name: Decoration
     uniqueID: 2261553663
     locked: 0
-  - name: Breakable
+  - name: Lighting
+    uniqueID: 619417783
+    locked: 0
+  - name: Hazards
     uniqueID: 3016034411
     locked: 0
   - name: Platforms

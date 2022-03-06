@@ -29,7 +29,7 @@ public class ExitDoor : MonoBehaviour
     {
         if(isOpen && doorCollider.IsTouchingLayers(LayerMask.GetMask("Player")))
         {
-            sceneLoader.PlayAgain();
+            sceneLoader.NextLevel();
         }
     }
 

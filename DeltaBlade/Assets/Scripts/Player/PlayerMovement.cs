@@ -17,6 +17,7 @@ public class PlayerMovement : MonoBehaviour
     Animator animator;
     PlayerAttack attack;
     EnemyHealth enemyHealth;
+    PlayerHealth playerHealth;
     BoxCollider2D myFeetCollider;
     CapsuleCollider2D myBodyCollider;
 
@@ -30,6 +31,7 @@ public class PlayerMovement : MonoBehaviour
 
         rb = GetComponent<Rigidbody2D>();
         attack = GetComponent<PlayerAttack>();
+        playerHealth = GetComponent<PlayerHealth>();
         myFeetCollider = GetComponent<BoxCollider2D>();
         myBodyCollider = GetComponent<CapsuleCollider2D>();
     }
@@ -50,6 +52,11 @@ public class PlayerMovement : MonoBehaviour
             
             GroundCollision();
         }     
+
+        if(other.gameObject.CompareTag("Hazards"))
+        {
+            playerHealth.PlayerDeath();
+        }
     }
 
 
@@ -72,7 +79,12 @@ public class PlayerMovement : MonoBehaviour
 
     void MovePlayer()
     {
-        if(AnimationState("shield")) { return; }
+        if(AnimationState("shield")) 
+        { 
+            playerVelocity = new Vector2(0f, 0f);
+            rb.velocity = playerVelocity;  
+            return; 
+        }
 
         playerVelocity = new Vector2(moveInput.x * moveSpeed, rb.velocity.y);
         rb.velocity = playerVelocity;    
@@ -98,10 +110,14 @@ public class PlayerMovement : MonoBehaviour
         //Setup as press and release in InputActions so method is called once when button is pressed and again when button released
         if(value.isPressed)
         {   
+            playerHealth.shieldUp = true;
+
             ShieldUp();
         }
         if(!value.isPressed)
         {
+            playerHealth.shieldUp = false;
+
             ToggleAnimation("shield", false);
         }
     }

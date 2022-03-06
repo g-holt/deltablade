@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7135443146035837167}
   - component: {fileID: 2964611033617723043}
   - component: {fileID: 705092027863361712}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: Exit Door Wood
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -75,6 +75,10 @@ PrefabInstance:
     - target: {fileID: 1688881638449150, guid: 5808ca7cfa9bad240b1c2c52003f4817, type: 3}
       propertyPath: m_Name
       value: Wood Door Closed
+      objectReference: {fileID: 0}
+    - target: {fileID: 1688881638449150, guid: 5808ca7cfa9bad240b1c2c52003f4817, type: 3}
+      propertyPath: m_Layer
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 1688881638449150, guid: 5808ca7cfa9bad240b1c2c52003f4817, type: 3}
       propertyPath: m_IsActive
@@ -155,6 +159,10 @@ PrefabInstance:
     - target: {fileID: 1013917086529220, guid: d10cbe6b249ddc34db2eae14d2ae9f3d, type: 3}
       propertyPath: m_Name
       value: Wood Door Open
+      objectReference: {fileID: 0}
+    - target: {fileID: 1013917086529220, guid: d10cbe6b249ddc34db2eae14d2ae9f3d, type: 3}
+      propertyPath: m_Layer
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 1013917086529220, guid: d10cbe6b249ddc34db2eae14d2ae9f3d, type: 3}
       propertyPath: m_IsActive
