@@ -12,22 +12,29 @@ public class SceneLoader : MonoBehaviour
 
     public void PlayAgain()
     {
-        FindObjectOfType<WeaponCanvas>().ResetWeaponCanvasPersist();
+        ResetGame();
 
         currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         Time.timeScale = 1;
+
         SceneManager.LoadScene(currentSceneIndex);
     }
 
 
     public void GameOver()
     {
-        ///FindObjectOfType<UiPersist>().ResetScenePersist();
-        FindObjectOfType<WeaponCanvas>().ResetWeaponCanvasPersist();
-        
+        ResetGame();
+
         Time.timeScale = 1;
 
         SceneManager.LoadScene(0);
+    }
+
+
+    void ResetGame()
+    {
+        FindObjectOfType<WeaponCanvas>().SetWeaponCanvasImage(false);
+        FindObjectOfType<CharacterWeaponSwitcher>().ResestCharacter();
     }
 
 

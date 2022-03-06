@@ -15,6 +15,27 @@ public class CharacterWeaponSwitcher : MonoBehaviour
     PlayerMovement playerMovement;
 
 
+    void Awake()
+    {
+        int numScenePersists = FindObjectsOfType<CharacterWeaponSwitcher>().Length;
+
+        if(numScenePersists > 1)
+        {
+            Destroy(gameObject);
+        }
+        else
+        {
+            DontDestroyOnLoad(gameObject);
+        }
+    }
+
+
+    public void ResetWeaponCanvasPersist()
+    {
+        Destroy(gameObject);
+    }
+
+
     void Start() 
     {
         hasSword = false;
@@ -77,6 +98,15 @@ public class CharacterWeaponSwitcher : MonoBehaviour
         animator.enabled = true;
         playerMovement.SetAnimator(animator);
         playerAttack.SetAnimator(animator);
+    }
+
+
+    public void ResestCharacter()
+    {
+        hasAxe = false;
+        hasSword = false;
+
+        SetCharacterActive((WeaponType)0);
     }
 
 }
