@@ -6,6 +6,7 @@ public class Enemy : MonoBehaviour
 {
     [SerializeField] float moveSpeed = 5f;
     [SerializeField] float damage = 5f;
+    [SerializeField] float attackDelay = 1f;
 
     Rigidbody2D rb;
     Animator animator;
@@ -24,21 +25,35 @@ public class Enemy : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         enemyHealth = GetComponent<EnemyHealth>();
+
         playerHealth = FindObjectOfType<PlayerHealth>();
+        playerFeetCollider = FindObjectOfType<BoxCollider2D>();
     }
 
     
     void Update()
     {
         if(!enemyHealth.isAlive) { return; }
+
         Move();
     }
 
 
-    void OnCollisionEnter2D(Collision2D other) 
-    {
-        playerFeetCollider = other.gameObject.GetComponent<BoxCollider2D>();
+    // void OnCollisionEnter2D(Collision2D other) 
+    // {
+    //     playerFeetCollider = other.gameObject.GetComponent<BoxCollider2D>();
 
+    //     if(other.gameObject.CompareTag("Player") && other.collider != playerFeetCollider)
+    //     {
+    //         enemyHealth.canBeDamaged = true;
+
+    //         FacePlayer(other.gameObject.transform);
+    //         AttackPlayer(other.gameObject.transform);
+    //     }    
+    // }
+
+    IEnumerator OnCollisionStay2D(Collision2D other) 
+    { 
         if(other.gameObject.CompareTag("Player") && other.collider != playerFeetCollider)
         {
             enemyHealth.canBeDamaged = true;
@@ -46,6 +61,8 @@ public class Enemy : MonoBehaviour
             FacePlayer(other.gameObject.transform);
             AttackPlayer(other.gameObject.transform);
         }    
+
+        yield return new WaitForSeconds(attackDelay);
     }
 
 
@@ -53,6 +70,8 @@ public class Enemy : MonoBehaviour
     {
         if(other.gameObject.CompareTag("Player"))
         {
+            StopAllCoroutines();
+
             if(wasFlipped)
             {
                 wasFlipped = false;
@@ -87,10 +106,24 @@ public class Enemy : MonoBehaviour
     void AttackPlayer(Transform player)
     {
         if (player == null) { return; }
-
+        Debug.Log("Attack Player");
         animator.SetBool("walk", false);
         animator.SetBool("attack", true);
+
+        //StartCoroutine("DelayNextAttack");
     }
+
+
+    // IEnumerator DelayNextAttack()
+    // {
+    //     animator.SetBool("attack", false);
+    //     animator.SetBool("idle", true);
+    //     //Debug.Log("Delay Next Attack");
+    //     yield return new WaitForSeconds(attackDelay);
+
+    //     animator.SetBool("idle", false);
+    //     animator.SetBool("attack", true);
+    // }
 
 
     void FacePlayer(Transform player)
@@ -114,6 +147,7 @@ public class Enemy : MonoBehaviour
     }
 
 
+    //Animation Event
     void DamagePlayer()
     {
         if(!isAttacking) { return; }

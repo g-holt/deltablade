@@ -3348,3 +3348,855 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 8376.921373 seconds.
+  path: Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Tiles_free/Medieval_tiles_free2_1.asset
+  artifactKey: Guid(00fe28a97a714714ba7d64796c54617e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Tiles_free/Medieval_tiles_free2_1.asset using Guid(00fe28a97a714714ba7d64796c54617e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '664ad02b11822d678238ccc767e79392') in 0.568644 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Tiles_free/Medieval_tiles_free2_2.asset
+  artifactKey: Guid(e23f9ccbba15c6e4d93127ee72575a4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Tiles_free/Medieval_tiles_free2_2.asset using Guid(e23f9ccbba15c6e4d93127ee72575a4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3cbde43407c64b050be006afa798d42') in 0.029717 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Tiles_free/Medieval_tiles_free2_7.asset
+  artifactKey: Guid(0dbd2c7dd43603c4f8d08d7964404ad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Tiles_free/Medieval_tiles_free2_7.asset using Guid(0dbd2c7dd43603c4f8d08d7964404ad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da065e3bd069941a2ec37a852a86ab4c') in 0.034363 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Tiles_free/Medieval_tiles_free2_23.asset
+  artifactKey: Guid(706d8307a11b2f24cbc2b2d304cc16f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Tiles_free/Medieval_tiles_free2_23.asset using Guid(706d8307a11b2f24cbc2b2d304cc16f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4768edc81cbd13f7d16535877f5f02b') in 0.038458 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Tiles_free/Medieval_tiles_free2_9.asset
+  artifactKey: Guid(8cbb1fc886e2cf04083457e2b390e43b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Tiles_free/Medieval_tiles_free2_9.asset using Guid(8cbb1fc886e2cf04083457e2b390e43b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1de06ff6be8c7da97c5a87f37ccdd98f') in 0.035676 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Tiles_free/Medieval_tiles_free2_15.asset
+  artifactKey: Guid(e21a8a830346f7c47937317e47317e97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Tiles_free/Medieval_tiles_free2_15.asset using Guid(e21a8a830346f7c47937317e47317e97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7a879a349b75d8f39dcfabe64cf63c4') in 0.035363 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Tiles_free/Medieval_tiles_free2_16.asset
+  artifactKey: Guid(c7e104a15f92b094ca3f320a387f4bf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Tiles_free/Medieval_tiles_free2_16.asset using Guid(c7e104a15f92b094ca3f320a387f4bf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '026931ed78aa9ff5494e3bca72596cbe') in 0.021993 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Tiles_free/Medieval_tiles_free2_22.asset
+  artifactKey: Guid(55198fbb560b87e4f825fffd7fd0b33d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Tiles_free/Medieval_tiles_free2_22.asset using Guid(55198fbb560b87e4f825fffd7fd0b33d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d39381afcd9141ce611d17f5bfc663d') in 0.030867 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 171.587337 seconds.
+  path: Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Tiles_free/Medieval_tiles_free2_27.asset
+  artifactKey: Guid(e54df89b4f95dd74ba08f64cdf6af519) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Tiles_free/Medieval_tiles_free2_27.asset using Guid(e54df89b4f95dd74ba08f64cdf6af519) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'daaf7df5538d92bca3ee141642e5827f') in 0.038680 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Tiles_free/Medieval_tiles_free2_28.asset
+  artifactKey: Guid(f1bcaf2a57ee8b743a9dd0f7d8d27aa5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Tiles_free/Medieval_tiles_free2_28.asset using Guid(f1bcaf2a57ee8b743a9dd0f7d8d27aa5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '781518ce4a1d7d47e1157dad8e561372') in 0.032202 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.157396 seconds.
+  path: Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Tiles_free/Medieval_tiles_free2_32.asset
+  artifactKey: Guid(b9eda2a54a9f40348804c9aaabe17b1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Tiles_free/Medieval_tiles_free2_32.asset using Guid(b9eda2a54a9f40348804c9aaabe17b1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b43b99af8369c931765b80f5ae44b158') in 0.031038 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Tiles_free/Medieval_tiles_free2_35.asset
+  artifactKey: Guid(75ac9449cb30b084f837aa903efca74b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Tiles_free/Medieval_tiles_free2_35.asset using Guid(75ac9449cb30b084f837aa903efca74b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57b23069b72474a15aa583d64cc245d2') in 0.027640 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.773399 seconds.
+  path: Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Tiles_free/Medieval_tiles_free2_37.asset
+  artifactKey: Guid(2692f4efbd3809341a0d5eeb348d9bd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Tiles_free/Medieval_tiles_free2_37.asset using Guid(2692f4efbd3809341a0d5eeb348d9bd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2de0ac7c6fab154cd432b6a3da884739') in 0.030518 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Tiles_free/Medieval_tiles_free2_40.asset
+  artifactKey: Guid(0c613769e6d22c04cb0c20f59c3160ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Tiles_free/Medieval_tiles_free2_40.asset using Guid(0c613769e6d22c04cb0c20f59c3160ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93c74b378f3a853d51afa683ec8d93d1') in 0.030239 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Tiles_free/Medieval_tiles_free2_38.asset
+  artifactKey: Guid(2a304df656aa83c4893d32ae8275fe52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Tiles_free/Medieval_tiles_free2_38.asset using Guid(2a304df656aa83c4893d32ae8275fe52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95ff74e7930eaea1ccb5acf368d29b95') in 0.040987 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Tiles_free/Medieval_tiles_free2_49.asset
+  artifactKey: Guid(a5e6056865d9eab4dac9498881c5fcf8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Tiles_free/Medieval_tiles_free2_49.asset using Guid(a5e6056865d9eab4dac9498881c5fcf8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '042f2e1e7cdacc4a2a80b177f7176788') in 0.039756 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Tiles_free/Medieval_tiles_free2_39.asset
+  artifactKey: Guid(623aaf92a77c47b49a49e59d04951323) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Tiles_free/Medieval_tiles_free2_39.asset using Guid(623aaf92a77c47b49a49e59d04951323) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4158b7be53ec9c3a24eee74bad590bc3') in 0.039690 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Tiles_free/Medieval_tiles_free2_48.asset
+  artifactKey: Guid(7f36776e1b185bd479fe5d20e2e23995) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Tiles_free/Medieval_tiles_free2_48.asset using Guid(7f36776e1b185bd479fe5d20e2e23995) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '540b746093a07e5a3f3f2d4f678282fe') in 0.043387 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Tiles_free/Medieval_tiles_free2_46.asset
+  artifactKey: Guid(2268a5d94b519824fbdf5db5d3eb0cba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Tiles_free/Medieval_tiles_free2_46.asset using Guid(2268a5d94b519824fbdf5db5d3eb0cba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f865692424807c10b8ca526c60af1b0') in 0.044296 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.031484 seconds.
+  path: Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Tiles_free/Medieval_tiles_free2_51.asset
+  artifactKey: Guid(4f7b4c99fffee0a40876fadafdf9fcec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Tiles_free/Medieval_tiles_free2_51.asset using Guid(4f7b4c99fffee0a40876fadafdf9fcec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86f6baeaed6ba7b406b62c1a67c9a61a') in 0.046778 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Tiles_free/Medieval_tiles_free2_53.asset
+  artifactKey: Guid(f329e299f14bcfb49a756b3f099187e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Tiles_free/Medieval_tiles_free2_53.asset using Guid(f329e299f14bcfb49a756b3f099187e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cff6ec0446f6a4bc030c599409e33189') in 0.045405 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Tiles_free/Medieval_tiles_free2_65.asset
+  artifactKey: Guid(1bc8d63dc35d75e4d89c90a5c9be0097) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Tiles_free/Medieval_tiles_free2_65.asset using Guid(1bc8d63dc35d75e4d89c90a5c9be0097) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0082e06e7c7ec5360efeb0c8192e525f') in 0.090094 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Tiles_free/Medieval_tiles_free2_62.asset
+  artifactKey: Guid(07e731826059b264fa55dd97335be51b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Tiles_free/Medieval_tiles_free2_62.asset using Guid(07e731826059b264fa55dd97335be51b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef4478489680cda61f684872f40bf58e') in 0.038130 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000059 seconds.
+  path: Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Tiles_free/Medieval_tiles_free2_57.asset
+  artifactKey: Guid(adebb42c4b9514746b250d606bc847d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Tiles_free/Medieval_tiles_free2_57.asset using Guid(adebb42c4b9514746b250d606bc847d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e2c21d0f6d4cf3dc369439c178b37f2') in 0.042271 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Tiles_free/Medieval_tiles_free2_56.asset
+  artifactKey: Guid(8b5fd3f4903507840b77e6878986a4f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Tiles_free/Medieval_tiles_free2_56.asset using Guid(8b5fd3f4903507840b77e6878986a4f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b21d0905bc2e5f009a4087db4e137a01') in 0.044840 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Tiles_free/Medieval_tiles_free2_68.asset
+  artifactKey: Guid(961d20cb835a8a84197d9362cd9fcddb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Tiles_free/Medieval_tiles_free2_68.asset using Guid(961d20cb835a8a84197d9362cd9fcddb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb368ef60cc05abd9e0a1fdb888b5766') in 0.038849 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Tiles_free/Medieval_tiles_free2_58.asset
+  artifactKey: Guid(d0c82a4d040e9ab4fa7921498aef3cde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Tiles_free/Medieval_tiles_free2_58.asset using Guid(d0c82a4d040e9ab4fa7921498aef3cde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48a0c2979ec883a964c7948e033a611c') in 0.040433 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Tiles_free/Medieval_tiles_free2_66.asset
+  artifactKey: Guid(71d1a9f3c18301e4db3cea1ac29e26c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Tiles_free/Medieval_tiles_free2_66.asset using Guid(71d1a9f3c18301e4db3cea1ac29e26c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '639746296c8964f84855fb2f48eefd89') in 0.041064 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Tiles_free/Medieval_tiles_free2_73.asset
+  artifactKey: Guid(bac52dd12c309e5469d0092bc20ce68c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Tiles_free/Medieval_tiles_free2_73.asset using Guid(bac52dd12c309e5469d0092bc20ce68c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5319adff6bb417dd6cd7c353d9e00324') in 0.030102 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Tiles_free/Medieval_tiles_free2_72.asset
+  artifactKey: Guid(2f7bf868b7625964f99d392577b74060) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Tiles_free/Medieval_tiles_free2_72.asset using Guid(2f7bf868b7625964f99d392577b74060) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a42ddab331ba6654756d37a705e3316') in 0.029461 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Tiles_free/Medieval_tiles_free2_90.asset
+  artifactKey: Guid(255eae3bf797af24bb0ed0670ff4d797) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Tiles_free/Medieval_tiles_free2_90.asset using Guid(255eae3bf797af24bb0ed0670ff4d797) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3570207628fa1344fe1e323f09a51830') in 0.029626 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000089 seconds.
+  path: Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Tiles_free/Medieval_tiles_free2_96.asset
+  artifactKey: Guid(32dd2376552e01e4b88327b9b4d0e2de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Tiles_free/Medieval_tiles_free2_96.asset using Guid(32dd2376552e01e4b88327b9b4d0e2de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9d0ac4728e8ef1571e52a1a82ecba52') in 0.031626 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Tiles_free/Medieval_tiles_free2_77.asset
+  artifactKey: Guid(194f5115b933c3448b702305f004a2f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Tiles_free/Medieval_tiles_free2_77.asset using Guid(194f5115b933c3448b702305f004a2f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac757908c9690a376c20d21562cf4304') in 0.040179 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Tiles_free/Medieval_tiles_free2_78.asset
+  artifactKey: Guid(311007bdaf19e0244bd2217cbe0d9645) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Tiles_free/Medieval_tiles_free2_78.asset using Guid(311007bdaf19e0244bd2217cbe0d9645) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65edf6f920689ecb4b6101c3f54cc73b') in 0.043495 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Tiles_free/Medieval_tiles_free2_79.asset
+  artifactKey: Guid(5ff0c1793623d4d40807e8945cb109a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Tiles_free/Medieval_tiles_free2_79.asset using Guid(5ff0c1793623d4d40807e8945cb109a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9e60fcb7d295fec10600c96df8d6267') in 0.031782 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Tiles_free/Medieval_tiles_free2_87.asset
+  artifactKey: Guid(fa37831e8939b64439d7e1b25c3bc824) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Tiles_free/Medieval_tiles_free2_87.asset using Guid(fa37831e8939b64439d7e1b25c3bc824) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5adfdc628d66ecf414ddec5edefeb5c9') in 0.041415 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Tiles_free/Medieval_tiles_free2_95.asset
+  artifactKey: Guid(f7b16f67efcf6e3499ff361d7bfba613) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Tiles_free/Medieval_tiles_free2_95.asset using Guid(f7b16f67efcf6e3499ff361d7bfba613) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43fa2c68969b91bc0052858f820e7e77') in 0.041144 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Tiles_free/Medieval_tiles_free2_100.asset
+  artifactKey: Guid(5551bb9f09e2c484db806c77d898b831) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Tiles_free/Medieval_tiles_free2_100.asset using Guid(5551bb9f09e2c484db806c77d898b831) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ec5759f22dfe102b3eb6687f0fcdd9f') in 0.038526 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Tiles_free/Medieval_tiles_free2_119.asset
+  artifactKey: Guid(b03f3ba6b7478d14db78aaec91c74cb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Tiles_free/Medieval_tiles_free2_119.asset using Guid(b03f3ba6b7478d14db78aaec91c74cb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a48a49d222e1105e4c7d5876382a7bad') in 0.040880 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Tiles_free/Medieval_tiles_free2_118.asset
+  artifactKey: Guid(fe7bbf08a0c290844af309b90907dbbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Tiles_free/Medieval_tiles_free2_118.asset using Guid(fe7bbf08a0c290844af309b90907dbbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93949ac995800dc23bed9a9d102387a0') in 0.041868 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Tiles_free/Medieval_tiles_free2_110.asset
+  artifactKey: Guid(3adedeff2e68d644283737d97dfe4bc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Tiles_free/Medieval_tiles_free2_110.asset using Guid(3adedeff2e68d644283737d97dfe4bc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '374ca57f2b5eac040554b814d80e2870') in 0.038613 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Tiles_free/Medieval_tiles_free2_82.asset
+  artifactKey: Guid(1b51ee068d69a214386bdfe76ede6b26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Tiles_free/Medieval_tiles_free2_82.asset using Guid(1b51ee068d69a214386bdfe76ede6b26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3cafe494832452a4a36fe16a6d646f30') in 0.026887 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Tiles_free/Medieval_tiles_free2_81.asset
+  artifactKey: Guid(5004cd090d4492a4dbbd99435955192a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Tiles_free/Medieval_tiles_free2_81.asset using Guid(5004cd090d4492a4dbbd99435955192a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5591b3e2508be9505da07d1d84a21699') in 0.028009 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Tiles_free/Medieval_tiles_free2_75.asset
+  artifactKey: Guid(164fae5121ce95c42951976fe626e194) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Tiles_free/Medieval_tiles_free2_75.asset using Guid(164fae5121ce95c42951976fe626e194) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc1548afa37026abd8f77021ef042281') in 0.036719 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Tiles_free/Medieval_tiles_free2_112.asset
+  artifactKey: Guid(982914e9bf0c83f4581e24181e2b4ace) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Tiles_free/Medieval_tiles_free2_112.asset using Guid(982914e9bf0c83f4581e24181e2b4ace) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d3a431b10483fb558ac09c0af053f52') in 0.031557 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Tiles_free/Medieval_tiles_free2_108.asset
+  artifactKey: Guid(0c772ce0a07ae7b4d90ff2ddc597228a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Tiles_free/Medieval_tiles_free2_108.asset using Guid(0c772ce0a07ae7b4d90ff2ddc597228a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4724f7905e912f9d285d51e439e8af3b') in 0.041336 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Tiles_free/Medieval_tiles_free2_105.asset
+  artifactKey: Guid(7072f65015411324d9a28f2d01b10599) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Tiles_free/Medieval_tiles_free2_105.asset using Guid(7072f65015411324d9a28f2d01b10599) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '449f4555cfba22ddfa51906e6f67e7ec') in 0.044238 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Tiles_free/Medieval_tiles_free2_117.asset
+  artifactKey: Guid(c447d0d690519874a8ec153180b64379) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Tiles_free/Medieval_tiles_free2_117.asset using Guid(c447d0d690519874a8ec153180b64379) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd273484e551b3febb8525f372d722af') in 0.039259 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Tiles_free/Medieval_tiles_free2_115.asset
+  artifactKey: Guid(62d5b7c65a606664c954cc6da1e1c300) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Tiles_free/Medieval_tiles_free2_115.asset using Guid(62d5b7c65a606664c954cc6da1e1c300) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e82fc0f6a8ed547c60a7db5347e345fd') in 0.040274 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Tiles_free/Medieval_tiles_free2_54.asset
+  artifactKey: Guid(61005a1b0358eee498315897c030d417) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Tiles_free/Medieval_tiles_free2_54.asset using Guid(61005a1b0358eee498315897c030d417) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '287564153b549184f6203eb22d19f464') in 0.043066 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Tiles_free/Medieval_tiles_free2_86.asset
+  artifactKey: Guid(9f8d2f8f63cd53f4f98df92d3d4fd57c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Tiles_free/Medieval_tiles_free2_86.asset using Guid(9f8d2f8f63cd53f4f98df92d3d4fd57c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b33ee2c74a43e21b30b3cedaeea31d0') in 0.042582 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Tiles_free/Medieval_tiles_free2_107.asset
+  artifactKey: Guid(80ff01adb65a3e04bab350f2e930ede5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Tiles_free/Medieval_tiles_free2_107.asset using Guid(80ff01adb65a3e04bab350f2e930ede5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fbb3a7615b541265ba51d655af51b9f8') in 0.043681 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Tiles_free/Medieval_tiles_free2_94.asset
+  artifactKey: Guid(afdf70666c9d9584aa92fb7d5195f52a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Tiles_free/Medieval_tiles_free2_94.asset using Guid(afdf70666c9d9584aa92fb7d5195f52a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9eb2f3114758fd22470ddbc2aae17624') in 0.044480 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000060 seconds.
+  path: Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Tiles_free/Medieval_tiles_free2_61.asset
+  artifactKey: Guid(1f5de28909e9756469cb72e199333498) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Tiles_free/Medieval_tiles_free2_61.asset using Guid(1f5de28909e9756469cb72e199333498) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a23ccb9d88a89f9e37902daccc3c077') in 0.032118 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 13.101488 seconds.
+  path: Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Textures/Medieval_props_free_21.asset
+  artifactKey: Guid(841c05b83694f054e86db0026db26653) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Textures/Medieval_props_free_21.asset using Guid(841c05b83694f054e86db0026db26653) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fda970dec4c891afc9dfe665f9842400') in 0.033977 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Textures/Medieval_props_free_23.asset
+  artifactKey: Guid(10973a1149857194e8b1433664c18178) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Textures/Medieval_props_free_23.asset using Guid(10973a1149857194e8b1433664c18178) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ad9b92cde699d7af0dda0c406845580') in 0.031133 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.227875 seconds.
+  path: Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Textures/Medieval_props_free_14.asset
+  artifactKey: Guid(0c2f619a3cea28248a3bc29b8a6e52bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Textures/Medieval_props_free_14.asset using Guid(0c2f619a3cea28248a3bc29b8a6e52bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d878cfa805ee479dd6ea6aeac3410e8') in 0.036390 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Textures/Medieval_props_free_6.asset
+  artifactKey: Guid(004502434a6b08c4a8001e423a14007f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Textures/Medieval_props_free_6.asset using Guid(004502434a6b08c4a8001e423a14007f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8e55f920563f1ba7767ece4c0b9caa2') in 0.032361 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Textures/Medieval_props_free_18.asset
+  artifactKey: Guid(78a68ca8534ed8749a49ecf30b7a26b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Textures/Medieval_props_free_18.asset using Guid(78a68ca8534ed8749a49ecf30b7a26b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42eb01bf9bdd5d58eb436f16c4bf4e7d') in 0.029549 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Textures/Medieval_props_free_3.asset
+  artifactKey: Guid(533b95d47bb309f45ae362601e9f6d8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Textures/Medieval_props_free_3.asset using Guid(533b95d47bb309f45ae362601e9f6d8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8aff4ea7b7ac30c4e1985e0c9b3c02d') in 0.039304 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Textures/Medieval_props_free_11.asset
+  artifactKey: Guid(79329291f8037604abf4b604694a0a1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Textures/Medieval_props_free_11.asset using Guid(79329291f8037604abf4b604694a0a1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b214c4600e25d4310f423c3b89bacc1') in 0.036575 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Textures/Medieval_props_free_2.asset
+  artifactKey: Guid(a821be319fe6096428588a626c883124) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Textures/Medieval_props_free_2.asset using Guid(a821be319fe6096428588a626c883124) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d72c2cbd9c713e5e379cdc978078f47') in 0.032045 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Textures/Medieval_props_free_12.asset
+  artifactKey: Guid(d99e6e868175ccc489dd29b4cf6f1936) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Textures/Medieval_props_free_12.asset using Guid(d99e6e868175ccc489dd29b4cf6f1936) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9400596c600cc2c0c479dc8881b716a8') in 0.038384 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Textures/Medieval_props_free_15.asset
+  artifactKey: Guid(466780f75ccc9464687e4170239c31ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Textures/Medieval_props_free_15.asset using Guid(466780f75ccc9464687e4170239c31ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66bb07e7ac3dbfd21f471753d3fea0d5') in 0.037699 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Textures/Medieval_props_free_7.asset
+  artifactKey: Guid(88b8baa252cd231499cc34cda96a8230) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Textures/Medieval_props_free_7.asset using Guid(88b8baa252cd231499cc34cda96a8230) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e5f1aed5a17f4c3619817a4347a381e') in 0.035983 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Textures/Medieval_props_free_9.asset
+  artifactKey: Guid(2fea10e3b5441444bae4bc7d3cf85a29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Medieval_pixel_art_asset_FREE/Textures/Medieval_props_free_9.asset using Guid(2fea10e3b5441444bae4bc7d3cf85a29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31fc3ea35c4f1f1dcc9ebecf9e7451a1') in 0.037521 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009231 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\gholt\Desktop\Unity\deltablade\DeltaBlade\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\gholt\Desktop\Unity\deltablade\DeltaBlade\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 2.53 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.071 seconds
+Domain Reload Profiling:
+	ReloadAssembly (3073ms)
+		BeginReloadAssembly (498ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (51ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (221ms)
+		EndReloadAssembly (2378ms)
+			LoadAssemblies (217ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (564ms)
+			ReleaseScriptCaches (4ms)
+			RebuildScriptCaches (99ms)
+			SetupLoadedEditorAssemblies (1293ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (26ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (3ms)
+				BeforeProcessingInitializeOnLoad (167ms)
+				ProcessInitializeOnLoadAttributes (878ms)
+				ProcessInitializeOnLoadMethodAttributes (192ms)
+				AfterProcessingInitializeOnLoad (25ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (33ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 7.31 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5825 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 69 unused Assets / (4.4 MB). Loaded Objects now: 7165.
+Memory consumption went from 237.9 MB to 233.5 MB.
+Total: 14.643800 ms (FindLiveObjects: 0.828000 ms CreateObjectMapping: 1.202700 ms MarkObjects: 8.983900 ms  DeleteObjects: 3.626600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009578 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\gholt\Desktop\Unity\deltablade\DeltaBlade\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\gholt\Desktop\Unity\deltablade\DeltaBlade\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 2.31 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.310 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2311ms)
+		BeginReloadAssembly (191ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (12ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (50ms)
+		EndReloadAssembly (1975ms)
+			LoadAssemblies (121ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (462ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (97ms)
+			SetupLoadedEditorAssemblies (1105ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (24ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (154ms)
+				ProcessInitializeOnLoadAttributes (773ms)
+				ProcessInitializeOnLoadMethodAttributes (134ms)
+				AfterProcessingInitializeOnLoad (17ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (24ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 6.92 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5825 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 69 unused Assets / (4.4 MB). Loaded Objects now: 7179.
+Memory consumption went from 237.9 MB to 233.5 MB.
+Total: 13.343200 ms (FindLiveObjects: 1.231300 ms CreateObjectMapping: 0.962500 ms MarkObjects: 7.057800 ms  DeleteObjects: 4.088800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009325 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\gholt\Desktop\Unity\deltablade\DeltaBlade\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\gholt\Desktop\Unity\deltablade\DeltaBlade\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 2.56 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.198 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2199ms)
+		BeginReloadAssembly (173ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (51ms)
+		EndReloadAssembly (1891ms)
+			LoadAssemblies (119ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (355ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (106ms)
+			SetupLoadedEditorAssemblies (1124ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (25ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (3ms)
+				BeforeProcessingInitializeOnLoad (173ms)
+				ProcessInitializeOnLoadAttributes (778ms)
+				ProcessInitializeOnLoadMethodAttributes (129ms)
+				AfterProcessingInitializeOnLoad (16ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (24ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 6.09 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5825 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 69 unused Assets / (4.4 MB). Loaded Objects now: 7193.
+Memory consumption went from 238.0 MB to 233.6 MB.
+Total: 10.075000 ms (FindLiveObjects: 0.904700 ms CreateObjectMapping: 0.573500 ms MarkObjects: 5.881800 ms  DeleteObjects: 2.713100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.012403 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\gholt\Desktop\Unity\deltablade\DeltaBlade\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\gholt\Desktop\Unity\deltablade\DeltaBlade\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.69 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.636 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2637ms)
+		BeginReloadAssembly (289ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (10ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (111ms)
+		EndReloadAssembly (2145ms)
+			LoadAssemblies (170ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (539ms)
+			ReleaseScriptCaches (4ms)
+			RebuildScriptCaches (96ms)
+			SetupLoadedEditorAssemblies (1175ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (23ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (153ms)
+				ProcessInitializeOnLoadAttributes (848ms)
+				ProcessInitializeOnLoadMethodAttributes (132ms)
+				AfterProcessingInitializeOnLoad (15ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (26ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 4.01 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5825 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 69 unused Assets / (4.4 MB). Loaded Objects now: 7207.
+Memory consumption went from 238.0 MB to 233.6 MB.
+Total: 10.236100 ms (FindLiveObjects: 0.776900 ms CreateObjectMapping: 0.519200 ms MarkObjects: 5.370300 ms  DeleteObjects: 3.568400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008944 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\gholt\Desktop\Unity\deltablade\DeltaBlade\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\gholt\Desktop\Unity\deltablade\DeltaBlade\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 2.42 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.193 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2194ms)
+		BeginReloadAssembly (163ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (48ms)
+		EndReloadAssembly (1904ms)
+			LoadAssemblies (122ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (345ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (73ms)
+			SetupLoadedEditorAssemblies (1154ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (25ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (3ms)
+				BeforeProcessingInitializeOnLoad (157ms)
+				ProcessInitializeOnLoadAttributes (807ms)
+				ProcessInitializeOnLoadMethodAttributes (146ms)
+				AfterProcessingInitializeOnLoad (17ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (28ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 6.77 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5825 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 69 unused Assets / (4.3 MB). Loaded Objects now: 7221.
+Memory consumption went from 238.0 MB to 233.6 MB.
+Total: 11.420800 ms (FindLiveObjects: 0.967400 ms CreateObjectMapping: 0.989800 ms MarkObjects: 5.808600 ms  DeleteObjects: 3.653000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.014328 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\gholt\Desktop\Unity\deltablade\DeltaBlade\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\gholt\Desktop\Unity\deltablade\DeltaBlade\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.34 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.721 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2723ms)
+		BeginReloadAssembly (397ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (20ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (130ms)
+		EndReloadAssembly (2081ms)
+			LoadAssemblies (251ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (639ms)
+			ReleaseScriptCaches (4ms)
+			RebuildScriptCaches (134ms)
+			SetupLoadedEditorAssemblies (935ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (22ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (154ms)
+				ProcessInitializeOnLoadAttributes (629ms)
+				ProcessInitializeOnLoadMethodAttributes (115ms)
+				AfterProcessingInitializeOnLoad (13ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (19ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 3.87 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5825 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 69 unused Assets / (4.4 MB). Loaded Objects now: 7235.
+Memory consumption went from 238.0 MB to 233.7 MB.
+Total: 8.649800 ms (FindLiveObjects: 0.609700 ms CreateObjectMapping: 0.438200 ms MarkObjects: 5.379000 ms  DeleteObjects: 2.220800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.010978 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\gholt\Desktop\Unity\deltablade\DeltaBlade\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\gholt\Desktop\Unity\deltablade\DeltaBlade\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 2.86 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.941 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2943ms)
+		BeginReloadAssembly (188ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (52ms)
+		EndReloadAssembly (2599ms)
+			LoadAssemblies (129ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (496ms)
+			ReleaseScriptCaches (4ms)
+			RebuildScriptCaches (132ms)
+			SetupLoadedEditorAssemblies (1568ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (33ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (3ms)
+				BeforeProcessingInitializeOnLoad (225ms)
+				ProcessInitializeOnLoadAttributes (1095ms)
+				ProcessInitializeOnLoadMethodAttributes (186ms)
+				AfterProcessingInitializeOnLoad (25ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (34ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 10.11 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5825 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 69 unused Assets / (4.4 MB). Loaded Objects now: 7249.
+Memory consumption went from 238.0 MB to 233.7 MB.
+Total: 14.209800 ms (FindLiveObjects: 0.956800 ms CreateObjectMapping: 0.658500 ms MarkObjects: 8.780700 ms  DeleteObjects: 3.812000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008886 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\gholt\Desktop\Unity\deltablade\DeltaBlade\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\gholt\Desktop\Unity\deltablade\DeltaBlade\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 2.56 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.318 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2319ms)
+		BeginReloadAssembly (228ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (12ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (72ms)
+		EndReloadAssembly (1933ms)
+			LoadAssemblies (143ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (452ms)
+			ReleaseScriptCaches (4ms)
+			RebuildScriptCaches (101ms)
+			SetupLoadedEditorAssemblies (1050ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (24ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (3ms)
+				BeforeProcessingInitializeOnLoad (171ms)
+				ProcessInitializeOnLoadAttributes (739ms)
+				ProcessInitializeOnLoadMethodAttributes (102ms)
+				AfterProcessingInitializeOnLoad (11ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (18ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 5.07 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5825 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 69 unused Assets / (4.3 MB). Loaded Objects now: 7263.
+Memory consumption went from 238.0 MB to 233.7 MB.
+Total: 12.207600 ms (FindLiveObjects: 0.634800 ms CreateObjectMapping: 0.629600 ms MarkObjects: 5.849100 ms  DeleteObjects: 5.091800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 

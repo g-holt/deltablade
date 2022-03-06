@@ -56,9 +56,6 @@ TagManager:
   - name: Background
     uniqueID: 3262724809
     locked: 0
-  - name: Decoration
-    uniqueID: 2261553663
-    locked: 0
   - name: Lighting
     uniqueID: 619417783
     locked: 0
@@ -67,6 +64,9 @@ TagManager:
     locked: 0
   - name: Platforms
     uniqueID: 3044870965
+    locked: 0
+  - name: Decoration
+    uniqueID: 2261553663
     locked: 0
   - name: Climbing
     uniqueID: 1639849695
