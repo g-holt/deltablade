@@ -9,6 +9,28 @@ public class WeaponCanvas : MonoBehaviour
     public bool hasSword;
     public bool hasAxe;
 
+
+    // void Awake()
+    // {
+    //     int numScenePersists = FindObjectsOfType<WeaponCanvas>().Length;
+
+    //     if(numScenePersists > 1)
+    //     {
+    //         Destroy(gameObject);
+    //     }
+    //     else
+    //     {
+    //         DontDestroyOnLoad(gameObject);
+    //     }
+    // }
+
+
+    public void ResetWeaponCanvasPersist()
+    {
+        Destroy(gameObject);
+    }
+
+
     void Start()
     {
         SetWeaponCanvasImage(false);

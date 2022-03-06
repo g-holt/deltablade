@@ -8,19 +8,33 @@ public class PlayerHealth : MonoBehaviour
     [SerializeField] [Range(0f, 1f)] float shieldPercent = .75f;
 
     Animator animator;
-    DeathHandler deathHandler;
-    PlayerMovement playerMovement;
     SceneLoader sceneLoader;
+    DeathHandler deathHandler;
+    PlayerCanvas playerCanvas;
+    WeaponCanvas weaponCanvas;
+    PlayerMovement playerMovement;
 
     public bool shieldUp;
+    public bool gameOver;
+
+    //int playerLives;
     
 
-    void Start()
+    public void ResetScenePersist()
     {
+        Destroy(gameObject);
+    }
+
+
+    void Start()
+    {   
+        //playerLives = 3;
+
         sceneLoader = FindObjectOfType<SceneLoader>();
 
         animator = GetComponent<Animator>();
         deathHandler = GetComponent<DeathHandler>();
+        playerCanvas = GetComponent<PlayerCanvas>();
         playerMovement = GetComponent<PlayerMovement>();
     }
 
@@ -36,6 +50,9 @@ public class PlayerHealth : MonoBehaviour
 
         if(health <= 0)
         {
+            //playerLives--;
+
+            playerCanvas.ReduceLives();
             PlayerDeath();
         }
     }
@@ -47,17 +64,35 @@ public class PlayerHealth : MonoBehaviour
         animator.SetBool("dead", true);
         playerMovement.enabled = false;
 
-        StartCoroutine("HandleDeath");
+        if(gameOver)
+        {
+            StartCoroutine("HandleDeath");
+        }
+        else
+        {Debug.Log("replay");
+            //sceneLoader.PlayAgain();
+            StartCoroutine("ResetLevel");
+        }
+    }
+
+
+    IEnumerator ResetLevel()
+    {
+        yield return new WaitForSeconds(1f);
+
+        sceneLoader.PlayAgain();
     }
 
 
     IEnumerator HandleDeath()
     {
-
         yield return new WaitForSeconds(1f);
-        
+
         deathHandler.GameOver();
-        //sceneLoader.PlayAgain();
+
+
+
+        ///Destroy(gameObject);     
     }
 
 }

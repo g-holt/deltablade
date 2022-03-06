@@ -16,6 +16,8 @@ TagManager:
   - Climbing
   - Breakable
   - Hazards
+  - PlayerCanvas
+  - GameOverCanvas
   layers:
   - Default
   - TransparentFX

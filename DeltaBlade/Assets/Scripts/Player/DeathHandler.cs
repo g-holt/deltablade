@@ -5,13 +5,19 @@ using UnityEngine.SceneManagement;
 
 public class DeathHandler : MonoBehaviour
 {
-    [SerializeField] Canvas gameOverCanvas;
+    
+    Canvas gameOverCanvas;
+    GameObject gameOverGameObj;
 
     int currentSceneIndex;
 
 
     void Start()
     {
+        gameOverGameObj = GameObject.FindGameObjectWithTag("GameOverCanvas");
+
+        gameOverCanvas = gameOverGameObj.gameObject.GetComponent<Canvas>();
+        
         gameOverCanvas.enabled = false;        
     }
 

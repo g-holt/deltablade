@@ -10,10 +10,25 @@ public class SceneLoader : MonoBehaviour
     int currentSceneIndex;
 
 
-    // public void PlayAgain()
-    // {Debug.Log("here 1");
-    //     StartCoroutine("LoadCurrentLevel");
-    // }
+    public void PlayAgain()
+    {
+        FindObjectOfType<WeaponCanvas>().ResetWeaponCanvasPersist();
+
+        currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        Time.timeScale = 1;
+        SceneManager.LoadScene(currentSceneIndex);
+    }
+
+
+    public void GameOver()
+    {
+        ///FindObjectOfType<UiPersist>().ResetScenePersist();
+        FindObjectOfType<WeaponCanvas>().ResetWeaponCanvasPersist();
+        
+        Time.timeScale = 1;
+
+        SceneManager.LoadScene(0);
+    }
 
 
     public void NextLevel()
@@ -22,21 +37,10 @@ public class SceneLoader : MonoBehaviour
     }
 
 
-    //IEnumerator LoadCurrentLevel()
-    public void PlayAgain()
-    {Debug.Log("here 2");
-        //yield return new WaitForSeconds(loadDelay);
-Debug.Log("here 3");
-        currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-        Time.timeScale = 1;
-        SceneManager.LoadScene(currentSceneIndex);
-    }
-
-
     IEnumerator LoadNextLevel()
-    {Debug.Log("before");
+    {
         yield return new WaitForSeconds(loadDelay);
-        Debug.Log("after");
+
         currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         Time.timeScale = 1;
         
