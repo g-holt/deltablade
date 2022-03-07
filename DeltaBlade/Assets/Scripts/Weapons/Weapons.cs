@@ -19,6 +19,8 @@ public class Weapons : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other) 
     {
+        //weaponCanvas = GetComponentInParent<WeaponCanvas>();
+
         if(weaponType == (WeaponType)1)
         {
             weaponCanvas.hasSword = true;

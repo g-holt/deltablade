@@ -71,12 +71,6 @@ public class PlayerMovement : MonoBehaviour
     }
 
 
-    public void ResetPosition()
-    {
-
-    }
-
-
     void OnMove(InputValue value)
     {
         moveInput = value.Get<Vector2>();

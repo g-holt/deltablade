@@ -10,29 +10,30 @@ public class WeaponCanvas : MonoBehaviour
     public bool hasAxe;
 
 
-    void Awake()
-    {
-        int numScenePersists = FindObjectsOfType<WeaponCanvas>().Length;
+    // void Awake()
+    // {
+    //     int numScenePersists = FindObjectsOfType<WeaponCanvas>().Length;
 
-        if(numScenePersists > 1)
-        {
-            Destroy(gameObject);
-        }
-        else
-        {
-            DontDestroyOnLoad(gameObject);
-        }
-    }
+    //     if(numScenePersists > 1)
+    //     {
+    //         Destroy(gameObject);
+    //     }
+    //     else
+    //     {
+    //         DontDestroyOnLoad(gameObject);
+    //     }
+    // }
 
 
-    public void ResetWeaponCanvasPersist()
-    {
-        Destroy(gameObject);
-    }
+    // public void ResetWeaponCanvasPersist()
+    // {
+    //     Destroy(gameObject);
+    // }
 
 
     void Start()
     {
+        weaponCanvas = GameObject.FindGameObjectWithTag("WeaponCanvas").GetComponent<Canvas>();
         SetWeaponCanvasImage(false);
     }
 

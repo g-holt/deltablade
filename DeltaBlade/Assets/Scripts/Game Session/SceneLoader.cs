@@ -7,12 +7,25 @@ public class SceneLoader : MonoBehaviour
 {
     [SerializeField] float loadDelay = 1f;
 
+    UiPersist uiPersist;
+    WeaponCanvas weaponCanvas;
+    CharacterWeaponSwitcher characterSwitcher;
+
     int currentSceneIndex;
+
+
+    // void Start() 
+    // {
+    //     uiPersist = FindObjectOfType<UiPersist>();
+    //     weaponCanvas = FindObjectOfType<WeaponCanvas>();  
+    //     characterSwitcher = FindObjectOfType<CharacterWeaponSwitcher>();  
+    // }
 
 
     public void PlayAgain()
     {
-        ResetGame();
+        //FindObjectOfType<WeaponCanvas>().SetWeaponCanvasImage(false);
+        //FindObjectOfType<CharacterWeaponSwitcher>().ResestCharacter();
 
         currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         Time.timeScale = 1;
@@ -23,7 +36,7 @@ public class SceneLoader : MonoBehaviour
 
     public void GameOver()
     {
-        ResetGame();
+        //ResetGame();
 
         Time.timeScale = 1;
 
@@ -33,8 +46,10 @@ public class SceneLoader : MonoBehaviour
 
     void ResetGame()
     {
-        FindObjectOfType<WeaponCanvas>().SetWeaponCanvasImage(false);
-        FindObjectOfType<CharacterWeaponSwitcher>().ResestCharacter();
+        FindObjectOfType<PlayerCanvas>().SetImagesActive();
+        //FindObjectOfType<UiPersist>().ResetUIPersist();
+        // characterSwitcher.ResetCharacterSwitcherPersist();
+        // weaponCanvas.ResetWeaponCanvasPersist();
     }
 
 

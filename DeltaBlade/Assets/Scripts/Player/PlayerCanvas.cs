@@ -48,7 +48,7 @@ public class PlayerCanvas : MonoBehaviour
 
 
     void Start() 
-    {Debug.Log("here");
+    {
         playerHealth = GetComponent<PlayerHealth>();
 
         PopulateLivesList();    
@@ -90,12 +90,12 @@ public class PlayerCanvas : MonoBehaviour
     }
 
 
-    // void SetImagesActive()
-    // {
-    //     foreach(Transform image in playerCanvas.transform)
-    //     {
-    //         image.gameObject.SetActive(true);
-    //     }
-    // }
+    public void SetImagesActive()
+    {
+        foreach(Transform image in playerCanvas.transform)
+        {
+            image.gameObject.SetActive(true);
+        }
+    }
 
 }

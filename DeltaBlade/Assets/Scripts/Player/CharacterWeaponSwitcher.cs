@@ -15,25 +15,25 @@ public class CharacterWeaponSwitcher : MonoBehaviour
     PlayerMovement playerMovement;
 
 
-    void Awake()
-    {
-        int numScenePersists = FindObjectsOfType<CharacterWeaponSwitcher>().Length;
+    // void Awake()
+    // {
+    //     int numScenePersists = FindObjectsOfType<CharacterWeaponSwitcher>().Length;
 
-        if(numScenePersists > 1)
-        {
-            Destroy(gameObject);
-        }
-        else
-        {
-            DontDestroyOnLoad(gameObject);
-        }
-    }
+    //     if(numScenePersists > 1)
+    //     {
+    //         Destroy(gameObject);
+    //     }
+    //     else
+    //     {
+    //         DontDestroyOnLoad(gameObject);
+    //     }
+    // }
 
 
-    public void ResetWeaponCanvasPersist()
-    {
-        Destroy(gameObject);
-    }
+    // public void ResetCharacterSwitcherPersist()
+    // {
+    //     Destroy(gameObject);
+    // }
 
 
     void Start() 
@@ -98,6 +98,7 @@ public class CharacterWeaponSwitcher : MonoBehaviour
         animator.enabled = true;
         playerMovement.SetAnimator(animator);
         playerAttack.SetAnimator(animator);
+        Debug.Log(animator.name);
     }
 
 
