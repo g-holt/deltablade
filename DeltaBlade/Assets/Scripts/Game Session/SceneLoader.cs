@@ -36,7 +36,7 @@ public class SceneLoader : MonoBehaviour
 
     public void GameOver()
     {
-        //ResetGame();
+        ResetGame();
 
         Time.timeScale = 1;
 
@@ -45,11 +45,10 @@ public class SceneLoader : MonoBehaviour
 
 
     void ResetGame()
-    {
+    {Debug.Log("here");
         FindObjectOfType<PlayerCanvas>().SetImagesActive();
-        //FindObjectOfType<UiPersist>().ResetUIPersist();
-        // characterSwitcher.ResetCharacterSwitcherPersist();
-        // weaponCanvas.ResetWeaponCanvasPersist();
+        FindObjectOfType<PlayerCanvas>().PopulateLivesList();
+        FindObjectOfType<UiPersist>().ResetUIPersist();
     }
 
 
@@ -65,7 +64,7 @@ public class SceneLoader : MonoBehaviour
 
         currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         Time.timeScale = 1;
-        
+        Debug.Log(currentSceneIndex);
         if(currentSceneIndex == SceneManager.sceneCount)
         {
             SceneManager.LoadScene(0);

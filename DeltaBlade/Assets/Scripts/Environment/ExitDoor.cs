@@ -20,7 +20,7 @@ public class ExitDoor : MonoBehaviour
         closedDoor.SetActive(true);
         openDoor.SetActive(false);    
 
-        sceneLoader = FindObjectOfType<SceneLoader>();
+        //sceneLoader = FindObjectOfType<SceneLoader>();
         doorCollider = GetComponent<CapsuleCollider2D>();
     }
 
@@ -29,7 +29,8 @@ public class ExitDoor : MonoBehaviour
     {
         if(isOpen && doorCollider.IsTouchingLayers(LayerMask.GetMask("Player")))
         {
-            sceneLoader.NextLevel();
+            isOpen = false;
+            FindObjectOfType<SceneLoader>().NextLevel();
         }
     }
 

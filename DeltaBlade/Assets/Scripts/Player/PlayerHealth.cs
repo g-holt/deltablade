@@ -69,7 +69,7 @@ public class PlayerHealth : MonoBehaviour
             StartCoroutine("HandleDeath");
         }
         else
-        {Debug.Log("replay");
+        {
             //sceneLoader.PlayAgain();
             StartCoroutine("ResetLevel");
         }

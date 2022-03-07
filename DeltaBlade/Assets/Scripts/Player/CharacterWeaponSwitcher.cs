@@ -98,7 +98,7 @@ public class CharacterWeaponSwitcher : MonoBehaviour
         animator.enabled = true;
         playerMovement.SetAnimator(animator);
         playerAttack.SetAnimator(animator);
-        Debug.Log(animator.name);
+        //Debug.Log(animator.name);
     }
 
 

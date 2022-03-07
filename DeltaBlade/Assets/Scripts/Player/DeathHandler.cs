@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class DeathHandler : MonoBehaviour
 {
     
-    Canvas gameOverCanvas;
+    public Canvas gameOverCanvas;
     GameObject gameOverGameObj;
 
     int currentSceneIndex;

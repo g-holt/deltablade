@@ -55,7 +55,7 @@ public class PlayerCanvas : MonoBehaviour
     }
 
 
-    void PopulateLivesList()
+    public void PopulateLivesList()
     {
         foreach(Transform image in playerCanvas.transform)
         {
@@ -65,7 +65,7 @@ public class PlayerCanvas : MonoBehaviour
             }
         }
         
-        Debug.Log(livesImage.Count);
+        //Debug.Log(livesImage.Count);
     }
 
 
