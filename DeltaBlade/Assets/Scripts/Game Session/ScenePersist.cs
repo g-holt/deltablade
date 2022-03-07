@@ -2,12 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class UiPersist : MonoBehaviour
+public class ScenePersist : MonoBehaviour
 {
 
     void Awake()
     {
-        int numScenePersists = FindObjectsOfType<UiPersist>().Length;
+        int numScenePersists = FindObjectsOfType<ScenePersist>().Length;
 
         if(numScenePersists > 1)
         {

@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    [SerializeField] float moveSpeed = 5f;
     [SerializeField] float damage = 5f;
+    [SerializeField] float moveSpeed = 5f;
     [SerializeField] float attackDelay = 1f;
 
     Rigidbody2D rb;

@@ -10,19 +10,13 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float jumpSpeed = 5f;                                          
 
     Vector2 moveInput;
-    Vector2 jumpInput;
     Vector2 playerVelocity;
     Lever lever;
     Rigidbody2D rb;
     Animator animator;
-    PlayerAttack attack;
-    EnemyHealth enemyHealth;
     PlayerHealth playerHealth;
     BoxCollider2D myFeetCollider;
     CapsuleCollider2D myBodyCollider;
-
-    bool canJump;
-    float gravityScaleAtStart;
 
 
     void Start()
@@ -30,7 +24,6 @@ public class PlayerMovement : MonoBehaviour
         lever = FindObjectOfType<Lever>();
 
         rb = GetComponent<Rigidbody2D>();
-        attack = GetComponent<PlayerAttack>();
         playerHealth = GetComponent<PlayerHealth>();
         myFeetCollider = GetComponent<BoxCollider2D>();
         myBodyCollider = GetComponent<CapsuleCollider2D>();

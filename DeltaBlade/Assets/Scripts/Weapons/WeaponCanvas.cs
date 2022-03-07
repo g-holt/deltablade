@@ -4,31 +4,10 @@ using UnityEngine;
 
 public class WeaponCanvas : MonoBehaviour
 {
-    [SerializeField] Canvas weaponCanvas;
+    Canvas weaponCanvas;
 
     public bool hasSword;
     public bool hasAxe;
-
-
-    // void Awake()
-    // {
-    //     int numScenePersists = FindObjectsOfType<WeaponCanvas>().Length;
-
-    //     if(numScenePersists > 1)
-    //     {
-    //         Destroy(gameObject);
-    //     }
-    //     else
-    //     {
-    //         DontDestroyOnLoad(gameObject);
-    //     }
-    // }
-
-
-    // public void ResetWeaponCanvasPersist()
-    // {
-    //     Destroy(gameObject);
-    // }
 
 
     void Start()
@@ -61,8 +40,5 @@ public class WeaponCanvas : MonoBehaviour
             }
         }
     }
-
-
-    
 
 }

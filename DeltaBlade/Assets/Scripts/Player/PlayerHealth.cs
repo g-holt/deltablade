@@ -11,13 +11,10 @@ public class PlayerHealth : MonoBehaviour
     SceneLoader sceneLoader;
     DeathHandler deathHandler;
     PlayerCanvas playerCanvas;
-    WeaponCanvas weaponCanvas;
     PlayerMovement playerMovement;
 
     public bool shieldUp;
     public bool gameOver;
-
-    //int playerLives;
     
 
     public void ResetScenePersist()
@@ -28,8 +25,6 @@ public class PlayerHealth : MonoBehaviour
 
     void Start()
     {   
-        //playerLives = 3;
-
         sceneLoader = FindObjectOfType<SceneLoader>();
 
         animator = GetComponent<Animator>();
@@ -50,8 +45,6 @@ public class PlayerHealth : MonoBehaviour
 
         if(health <= 0)
         {
-            //playerLives--;
-
             playerCanvas.ReduceLives();
             PlayerDeath();
         }
@@ -70,7 +63,6 @@ public class PlayerHealth : MonoBehaviour
         }
         else
         {
-            //sceneLoader.PlayAgain();
             StartCoroutine("ResetLevel");
         }
     }
@@ -89,10 +81,6 @@ public class PlayerHealth : MonoBehaviour
         yield return new WaitForSeconds(1f);
 
         deathHandler.GameOver();
-
-
-
-        ///Destroy(gameObject);     
     }
 
 }

@@ -12,12 +12,6 @@ public class PlayerAttack : MonoBehaviour
     public bool canDamage; 
 
 
-    void Start() 
-    {
-
-    }
-
-
     void OnCollisionEnter2D(Collision2D other) 
     {
         if(other.gameObject.CompareTag("Enemy"))
@@ -26,6 +20,7 @@ public class PlayerAttack : MonoBehaviour
             enemyHealth = other.gameObject.GetComponent<EnemyHealth>();     
         }    
     }
+
 
     void OnCollisionExit2D(Collision2D other) 
     {

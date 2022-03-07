@@ -4,37 +4,13 @@ using UnityEngine;
 
 public class PlayerCanvas : MonoBehaviour
 {   
-    [SerializeField] Canvas playerCanvas;
-
     List<Transform> livesImage = new List<Transform>();
 
     GameObject canvas;
-    //Canvas playerCanvas;
+    Canvas playerCanvas;
     PlayerHealth playerHealth;
 
     int imageIndex;
-
-
-    // void Awake()
-    // {
-    //     int numScenePersists = FindObjectsOfType<PlayerCanvas>().Length;
-
-    //     if(numScenePersists > 1)
-    //     {
-    //         Destroy(gameObject);
-    //     }
-    //     else
-    //     {
-    //         DontDestroyOnLoad(gameObject);
-    //     }
-    // }
-
-
-    // public void ResetCanvasPersist()
-    // {
-    //     Destroy(gameObject);
-    // }
-
 
 
     void Awake()
@@ -43,7 +19,6 @@ public class PlayerCanvas : MonoBehaviour
 
         playerHealth = GetComponent<PlayerHealth>();
         playerCanvas = canvas.GetComponent<Canvas>();
-
     }
 
 
@@ -64,8 +39,6 @@ public class PlayerCanvas : MonoBehaviour
                 livesImage.Add(image);
             }
         }
-        
-        //Debug.Log(livesImage.Count);
     }
 
 

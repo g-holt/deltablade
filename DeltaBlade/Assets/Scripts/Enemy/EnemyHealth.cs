@@ -10,8 +10,9 @@ public class EnemyHealth : MonoBehaviour
     Animator animator;
     CapsuleCollider2D enemyBodyCollider;
 
-    public bool canBeDamaged;
     public bool isAlive;
+    public bool canBeDamaged;
+
 
     void Start()
     {   

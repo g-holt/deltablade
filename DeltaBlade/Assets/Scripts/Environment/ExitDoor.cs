@@ -4,10 +4,9 @@ using UnityEngine;
 
 public class ExitDoor : MonoBehaviour
 {
-    [SerializeField] GameObject closedDoor;
     [SerializeField] GameObject openDoor;
+    [SerializeField] GameObject closedDoor;
 
-    SceneLoader sceneLoader;
     CapsuleCollider2D doorCollider;
 
     bool isOpen;
@@ -20,7 +19,6 @@ public class ExitDoor : MonoBehaviour
         closedDoor.SetActive(true);
         openDoor.SetActive(false);    
 
-        //sceneLoader = FindObjectOfType<SceneLoader>();
         doorCollider = GetComponent<CapsuleCollider2D>();
     }
 
