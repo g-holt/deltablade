@@ -11,13 +11,20 @@ public class PlayerAttack : MonoBehaviour
 
     public bool canDamage; 
     public bool isDisarmed;
+    public bool isAlive;
+
+
+    void Start() 
+    {
+        isAlive = true;    
+    }
 
 
     void OnCollisionEnter2D(Collision2D other) 
     {
         if(other.gameObject.CompareTag("Enemy"))
         {
-            if(isDisarmed) { return; }
+            if(isDisarmed || !isAlive) { return; }
 
             canDamage = true;
             enemyHealth = other.gameObject.GetComponent<EnemyHealth>();     
@@ -36,8 +43,8 @@ public class PlayerAttack : MonoBehaviour
 
     void OnAttack()
     {
-        if(isDisarmed) { return; }
-        
+        if(isDisarmed || !isAlive) { return; }
+
         animator.SetTrigger("attack");
         DamageEnemy();
     }

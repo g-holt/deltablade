@@ -19,10 +19,13 @@ public class PlayerMovement : MonoBehaviour
     CapsuleCollider2D myBodyCollider;
 
     public bool isDisarmed;
+    public bool isAlive;
 
 
     void Start()
     {
+        isAlive = true;
+        
         lever = FindObjectOfType<Lever>();
 
         rb = GetComponent<Rigidbody2D>();
@@ -34,6 +37,8 @@ public class PlayerMovement : MonoBehaviour
     
     void Update()
     {
+        if(!isAlive) { return; }
+
         MovePlayer();
         FlipSprite();
     }
@@ -41,6 +46,8 @@ public class PlayerMovement : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D other) 
     {
+        if(!isAlive) { return; }
+
         if(other.gameObject.CompareTag("Ground"))
         {
             if(!TouchingLayer(myFeetCollider, "Ground")) { return; }
@@ -68,6 +75,8 @@ public class PlayerMovement : MonoBehaviour
 
     void OnMove(InputValue value)
     {
+        if(!isAlive) { return; } 
+
         moveInput = value.Get<Vector2>();
     }
 
@@ -94,6 +103,8 @@ public class PlayerMovement : MonoBehaviour
 
     void OnJump(InputValue value)
     {
+        if(!isAlive) { return; } 
+
         /* 2 */
         if(!TouchingLayer(myFeetCollider, "Ground")) { return; }
         if(!value.isPressed) { return; } 
@@ -105,6 +116,7 @@ public class PlayerMovement : MonoBehaviour
 
     void OnDefend(InputValue value)
     {
+        if(!isAlive) { return; }
         if(isDisarmed) { return; }
 
         //Setup as press and release in InputActions so method is called once when button is pressed and again when button released
@@ -136,6 +148,8 @@ public class PlayerMovement : MonoBehaviour
 
     void OnPullLever()
     {
+        if(!isAlive) { return; }
+
         if(!TouchingLayer(myBodyCollider, "Lever")) { return; }
 
         lever.PullLever();

@@ -11,6 +11,7 @@ public class PlayerHealth : MonoBehaviour
     SceneLoader sceneLoader;
     DeathHandler deathHandler;
     PlayerCanvas playerCanvas;
+    PlayerAttack playerAttack;
     PlayerMovement playerMovement;
 
     public bool shieldUp;
@@ -30,6 +31,7 @@ public class PlayerHealth : MonoBehaviour
         animator = GetComponent<Animator>();
         deathHandler = GetComponent<DeathHandler>();
         playerCanvas = GetComponent<PlayerCanvas>();
+        playerAttack = GetComponent<PlayerAttack>();
         playerMovement = GetComponent<PlayerMovement>();
     }
 
@@ -45,7 +47,11 @@ public class PlayerHealth : MonoBehaviour
 
         if(health <= 0)
         {
+            playerMovement.isAlive = false;   
+            playerAttack.isAlive = false;
+            
             playerCanvas.ReduceLives();
+            
             PlayerDeath();
         }
     }
