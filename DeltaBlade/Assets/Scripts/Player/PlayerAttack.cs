@@ -10,12 +10,15 @@ public class PlayerAttack : MonoBehaviour
     EnemyHealth enemyHealth;
 
     public bool canDamage; 
+    public bool isDisarmed;
 
 
     void OnCollisionEnter2D(Collision2D other) 
     {
         if(other.gameObject.CompareTag("Enemy"))
         {
+            if(isDisarmed) { return; }
+
             canDamage = true;
             enemyHealth = other.gameObject.GetComponent<EnemyHealth>();     
         }    
@@ -33,6 +36,8 @@ public class PlayerAttack : MonoBehaviour
 
     void OnAttack()
     {
+        if(isDisarmed) { return; }
+        
         animator.SetTrigger("attack");
         DamageEnemy();
     }

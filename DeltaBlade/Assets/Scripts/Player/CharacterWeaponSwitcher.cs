@@ -58,6 +58,17 @@ public class CharacterWeaponSwitcher : MonoBehaviour
             if(weaponTypeIndex == currentWeapon)
             {
                 SwapCharacter(character);
+
+                if(weaponTypeIndex == 0)
+                {
+                    playerMovement.isDisarmed = true;
+                    playerAttack.isDisarmed = true;
+                }
+                else
+                {
+                    playerMovement.isDisarmed = false;
+                    playerAttack.isDisarmed = false;
+                }
             }
             else
             {

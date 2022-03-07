@@ -18,6 +18,8 @@ public class PlayerMovement : MonoBehaviour
     BoxCollider2D myFeetCollider;
     CapsuleCollider2D myBodyCollider;
 
+    public bool isDisarmed;
+
 
     void Start()
     {
@@ -57,7 +59,7 @@ public class PlayerMovement : MonoBehaviour
     {
         ToggleAnimation("jump", false);
 
-        if(Mouse.current.rightButton.isPressed)
+        if(Mouse.current.rightButton.isPressed && !isDisarmed)
         {
             ShieldUp();
         }
@@ -72,11 +74,14 @@ public class PlayerMovement : MonoBehaviour
 
     void MovePlayer()
     {
-        if(AnimationState("shield")) 
-        { 
-            playerVelocity = new Vector2(0f, 0f);
-            rb.velocity = playerVelocity;  
-            return; 
+        if(!isDisarmed)
+        {
+            if(AnimationState("shield")) 
+            {
+                playerVelocity = new Vector2(0f, 0f);
+                rb.velocity = playerVelocity;  
+                return;
+            } 
         }
 
         playerVelocity = new Vector2(moveInput.x * moveSpeed, rb.velocity.y);
@@ -100,6 +105,8 @@ public class PlayerMovement : MonoBehaviour
 
     void OnDefend(InputValue value)
     {
+        if(isDisarmed) { return; }
+
         //Setup as press and release in InputActions so method is called once when button is pressed and again when button released
         if(value.isPressed)
         {   
@@ -118,11 +125,10 @@ public class PlayerMovement : MonoBehaviour
 
     void ShieldUp()
     {
-        if(!AnimationState("jump"))
-        {
-            rb.velocity = new Vector2(0f, 0f);
-        }
-
+        if(AnimationState("jump")) { return; }
+        
+        rb.velocity = new Vector2(0f, 0f);
+        
         ToggleAnimation("shield", true);
         ToggleAnimation("walk", false);
     }
