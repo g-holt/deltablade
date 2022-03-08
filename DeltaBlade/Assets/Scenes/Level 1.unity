@@ -8036,10 +8036,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 654740408, guid: d0f10d5604d7cb64aa6a76d9e61587fe, type: 3}
-      propertyPath: m_Volume
-      value: 0.5
-      objectReference: {fileID: 0}
     - target: {fileID: 7129821341039471913, guid: d0f10d5604d7cb64aa6a76d9e61587fe, type: 3}
       propertyPath: m_Name
       value: Exit Door Wood
@@ -8182,10 +8178,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 6629057388596465888, guid: c2bef0d9b1e765a4f90c6d23cdf494f3, type: 3}
-      propertyPath: weaponCanvas
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 6629057388596465890, guid: c2bef0d9b1e765a4f90c6d23cdf494f3, type: 3}
       propertyPath: m_Name
       value: Weapons
@@ -8243,9 +8235,9 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1144206366242140058, guid: abe1fe1e6c99749468d893233f5803ad, type: 3}
-      propertyPath: damage
-      value: 5
+    - target: {fileID: 580198092, guid: abe1fe1e6c99749468d893233f5803ad, type: 3}
+      propertyPath: m_audioClip
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 4561280085331041355, guid: abe1fe1e6c99749468d893233f5803ad, type: 3}
       propertyPath: m_RootOrder
@@ -8291,17 +8283,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4617860282503369838, guid: abe1fe1e6c99749468d893233f5803ad, type: 3}
-      propertyPath: hasSword
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6008725249764958499, guid: abe1fe1e6c99749468d893233f5803ad, type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 6196717470069075882, guid: abe1fe1e6c99749468d893233f5803ad, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6204951336238330615, guid: abe1fe1e6c99749468d893233f5803ad, type: 3}
       propertyPath: gameOverCanvas
@@ -8309,8 +8293,12 @@ PrefabInstance:
       objectReference: {fileID: 740989069911393098}
     - target: {fileID: 7929184035345767932, guid: abe1fe1e6c99749468d893233f5803ad, type: 3}
       propertyPath: health
-      value: 5
+      value: 1.98
       objectReference: {fileID: 0}
+    - target: {fileID: 7929184035345767932, guid: abe1fe1e6c99749468d893233f5803ad, type: 3}
+      propertyPath: deathClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 958408b32ccf3714ea02821877b0870c, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: abe1fe1e6c99749468d893233f5803ad, type: 3}
 --- !u!1001 &8341006659360051205
@@ -8377,13 +8365,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1742098252, guid: f16917bb0c68bb54ebd1e74f4f21ce37, type: 3}
-      propertyPath: m_Volume
-      value: 0.15
+    - target: {fileID: 136025792785836260, guid: f16917bb0c68bb54ebd1e74f4f21ce37, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 6932297437875475927, guid: f16917bb0c68bb54ebd1e74f4f21ce37, type: 3}
-      propertyPath: loadDelay
-      value: 2.4
+    - target: {fileID: 7141714753382662111, guid: f16917bb0c68bb54ebd1e74f4f21ce37, type: 3}
+      propertyPath: m_AdditionalShaderChannelsFlag
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 8513359193221009120, guid: f16917bb0c68bb54ebd1e74f4f21ce37, type: 3}
       propertyPath: m_Name

@@ -163,7 +163,7 @@ public class Enemy : MonoBehaviour
 
 
     public void StopEnemyMovement()
-    {Debug.Log("stopped");
+    {
         canMove = false;
 
         rb.velocity = new Vector2(0f, 0f);

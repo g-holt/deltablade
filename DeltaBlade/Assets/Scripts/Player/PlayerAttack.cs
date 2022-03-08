@@ -4,10 +4,13 @@ using UnityEngine;
 
 public class PlayerAttack : MonoBehaviour
 {
+    [SerializeField] AudioClip weaponSwing;
+    [SerializeField] AudioClip weaponHit;  
     [SerializeField] float damage = 10f;
 
     Animator animator;
     EnemyHealth enemyHealth;
+    AudioSource audioSource;
 
     public bool canDamage; 
     public bool isDisarmed;
@@ -17,6 +20,10 @@ public class PlayerAttack : MonoBehaviour
     void Start() 
     {
         isAlive = true;    
+
+        audioSource = GetComponent<AudioSource>();
+        
+        audioSource.clip = weaponSwing;
     }
 
 
@@ -27,6 +34,7 @@ public class PlayerAttack : MonoBehaviour
             if(isDisarmed || !isAlive) { return; }
 
             canDamage = true;
+            audioSource.clip = weaponHit;
             enemyHealth = other.gameObject.GetComponent<EnemyHealth>();     
         }    
     }
@@ -37,6 +45,7 @@ public class PlayerAttack : MonoBehaviour
         if(other.gameObject.CompareTag("Enemy"))
         {
             canDamage = false;
+            audioSource.clip = weaponSwing;
         }    
     }
 
@@ -45,6 +54,8 @@ public class PlayerAttack : MonoBehaviour
     {
         if(isDisarmed || !isAlive) { return; }
 
+        audioSource.PlayOneShot(audioSource.clip);
+        
         animator.SetTrigger("attack");
         DamageEnemy();
     }

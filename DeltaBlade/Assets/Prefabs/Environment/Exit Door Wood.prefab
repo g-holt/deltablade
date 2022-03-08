@@ -50,6 +50,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   openDoor: {fileID: 6698870917398070741}
   closedDoor: {fileID: 489663858317840372}
+  isOpen: 0
 --- !u!70 &705092027863361712
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -78,7 +79,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: e04a8ef9c5242e24f8f309abf1d5ec69, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0

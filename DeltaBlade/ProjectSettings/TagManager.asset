@@ -19,6 +19,7 @@ TagManager:
   - PlayerCanvas
   - GameOverCanvas
   - WeaponCanvas
+  - Player Health
   layers:
   - Default
   - TransparentFX

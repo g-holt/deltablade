@@ -51,6 +51,8 @@ public class ExitDoor : MonoBehaviour
     {
         foreach(Enemy enemy in enemies)
         {
+            if(enemy == null) { return; 
+            }
             enemy.StopEnemyMovement();
         }
     }

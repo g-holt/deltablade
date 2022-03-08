@@ -50,7 +50,7 @@ public class PlayerCanvas : MonoBehaviour
             {
                 livesImage[imageIndex].gameObject.SetActive(false);
 
-                if(livesImage.Count == 1) 
+                if(livesImage.Count == 2)  //Will refactor over time; currently set up for convenience and as a working solution this currently considers PlayerHealth Text as a transform child 
                 { 
                     playerHealth.gameOver = true;
                     playerHealth.PlayerDeath();

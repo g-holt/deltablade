@@ -5,9 +5,9 @@ using UnityEngine.Tilemaps;
 using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
-{
+{                   
     [SerializeField] float moveSpeed = 5f;
-    [SerializeField] float jumpSpeed = 5f;                                          
+    [SerializeField] float jumpSpeed = 5f;   
 
     Vector2 moveInput;
     Vector2 playerVelocity;
@@ -31,6 +31,7 @@ public class PlayerMovement : MonoBehaviour
         lever = FindObjectOfType<Lever>();
 
         rb = GetComponent<Rigidbody2D>();
+        
         playerHealth = GetComponent<PlayerHealth>();
         myFeetCollider = GetComponent<BoxCollider2D>();
         myBodyCollider = GetComponent<CapsuleCollider2D>();
@@ -59,6 +60,7 @@ public class PlayerMovement : MonoBehaviour
 
         if(other.gameObject.CompareTag("Hazards"))
         {
+            playerHealth.SetHealth(0);
             playerHealth.PlayerDeath();
         }
     }

@@ -46,7 +46,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 486ea305a3007ae42b83fe687aac9b60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponCanvas: {fileID: 0}
   hasSword: 0
   hasAxe: 0
 --- !u!1001 &6629057388202334679
@@ -56,6 +55,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6629057388596465891}
     m_Modifications:
+    - target: {fileID: 5459117706742263920, guid: 6d577739128c1314ca9b2ad27629df0e, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6632100748023058864, guid: 6d577739128c1314ca9b2ad27629df0e, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -118,6 +121,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6629057388596465891}
     m_Modifications:
+    - target: {fileID: 3781774760074766787, guid: 72d179ea1b4461e41b64b17913ffc1eb, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5398497514941978536, guid: 72d179ea1b4461e41b64b17913ffc1eb, type: 3}
       propertyPath: m_RootOrder
       value: 1
