@@ -21,6 +21,8 @@ public class PlayerMovement : MonoBehaviour
     public bool isDisarmed;
     public bool isAlive;
 
+    bool isLeverPulled;
+
 
     void Start()
     {
@@ -148,11 +150,13 @@ public class PlayerMovement : MonoBehaviour
 
     void OnPullLever()
     {
-        if(!isAlive) { return; }
+        if(!isAlive || isLeverPulled) { return; }
 
         if(!TouchingLayer(myBodyCollider, "Lever")) { return; }
 
         lever.PullLever();
+
+        isLeverPulled = true;
     }
 
 

@@ -9,6 +9,7 @@ public class Lever : MonoBehaviour
     [SerializeField] GameObject leverNotPulled;
 
     ExitDoor exitDoor;
+    AudioSource audioSource;
     BoxCollider2D leverCollider;
 
 
@@ -18,12 +19,16 @@ public class Lever : MonoBehaviour
         leverNotPulled.SetActive(true);    
 
         exitDoor = FindObjectOfType<ExitDoor>();
+        audioSource = GetComponent<AudioSource>();
         leverCollider = GetComponent<BoxCollider2D>();
     }
 
 
+    //Called from OnPullLever() in PlayerMovement
     public void PullLever()
     {
+        audioSource.Play();
+
         leverPulled.SetActive(true);
         leverNotPulled.SetActive(false);
 

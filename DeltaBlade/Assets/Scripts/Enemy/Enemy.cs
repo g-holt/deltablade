@@ -19,10 +19,13 @@ public class Enemy : MonoBehaviour
     bool isAttacking;
     bool wasFlipped;
     bool playerOnRight;
+    bool canMove;
 
 
     void Start()
     {
+        canMove = true;
+
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         enemyHealth = GetComponent<EnemyHealth>();
@@ -88,6 +91,13 @@ public class Enemy : MonoBehaviour
     {
         if(isAttacking) { return; }
 
+        if(!canMove)
+        {
+            rb.velocity = new Vector2(0f, 0f);
+            animator.SetBool("walk", false);
+            return;
+        }
+
         animator.SetBool("walk", true);
         rb.velocity = new Vector2(moveSpeed, 0f);
     }
@@ -96,6 +106,7 @@ public class Enemy : MonoBehaviour
     void AttackPlayer(Transform player)
     {
         if (player == null) { return; }
+        if(!canMove) { return; }
 
         animator.SetBool("attack", true);
     }
@@ -148,6 +159,14 @@ public class Enemy : MonoBehaviour
         if(!isAttacking) { return; }
         
         playerHealth.ReduceHealth(damage);
+    }
+
+
+    public void StopEnemyMovement()
+    {Debug.Log("stopped");
+        canMove = false;
+
+        rb.velocity = new Vector2(0f, 0f);
     }
 
 
