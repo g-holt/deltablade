@@ -185,9 +185,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37765e3081dad1c479394b100dec6f3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
   damage: 10
-  attackDelay: 1
+  moveSpeed: 5
+  attackDelay: 1.5
 --- !u!114 &5682624836159880486
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -201,5 +201,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 15
-  canBeDamaged: 0
   isAlive: 0
+  canBeDamaged: 0

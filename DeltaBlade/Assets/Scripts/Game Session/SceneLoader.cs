@@ -54,7 +54,7 @@ public class SceneLoader : MonoBehaviour
         currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         Time.timeScale = 1;
 
-        if(currentSceneIndex == SceneManager.sceneCount)
+        if(currentSceneIndex == SceneManager.sceneCountInBuildSettings - 1)
         {
             SceneManager.LoadScene(0);
         }
