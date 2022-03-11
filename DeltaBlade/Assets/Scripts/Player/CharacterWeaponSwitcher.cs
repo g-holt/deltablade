@@ -37,14 +37,14 @@ public class CharacterWeaponSwitcher : MonoBehaviour
     void OnChangeWeapon(InputValue value)
     {
         if(Keyboard.current.digit1Key.wasPressedThisFrame && hasSword)
-        {Debug.Log("Sword");
+        {
             currentWeapon = (WeaponType)1;
         }
         else if(Keyboard.current.digit2Key.wasPressedThisFrame && hasAxe)
-        {   Debug.Log("axe");
+        {   
             currentWeapon = (WeaponType)2;
         }
-Debug.Log("Set" + currentWeapon);
+
         SetCharacterActive(currentWeapon);
     }
 

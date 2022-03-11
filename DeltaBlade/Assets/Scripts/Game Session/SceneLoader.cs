@@ -55,7 +55,7 @@ public class SceneLoader : MonoBehaviour
         Time.timeScale = 1;
 
         if(currentSceneIndex == SceneManager.sceneCountInBuildSettings - 1)
-        {
+        {Debug.Log(currentSceneIndex + " " + SceneManager.sceneCountInBuildSettings);
             SceneManager.LoadScene(0);
         }
         else

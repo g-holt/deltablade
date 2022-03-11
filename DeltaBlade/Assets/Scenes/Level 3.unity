@@ -2521,6 +2521,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f16917bb0c68bb54ebd1e74f4f21ce37, type: 3}
+--- !u!223 &1319099322 stripped
+Canvas:
+  m_CorrespondingSourceObject: {fileID: 8965825416456489607, guid: f16917bb0c68bb54ebd1e74f4f21ce37, type: 3}
+  m_PrefabInstance: {fileID: 1319099321}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1319519436
 GameObject:
   m_ObjectHideFlags: 0
@@ -12948,7 +12953,7 @@ PrefabInstance:
     - target: {fileID: 6204951336238330615, guid: abe1fe1e6c99749468d893233f5803ad, type: 3}
       propertyPath: gameOverCanvas
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1319099322}
     - target: {fileID: 7236995828932920466, guid: abe1fe1e6c99749468d893233f5803ad, type: 3}
       propertyPath: playerCanvas
       value: 
@@ -12957,6 +12962,10 @@ PrefabInstance:
       propertyPath: health
       value: 100
       objectReference: {fileID: 0}
+    - target: {fileID: 7929184035345767932, guid: abe1fe1e6c99749468d893233f5803ad, type: 3}
+      propertyPath: deathClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 958408b32ccf3714ea02821877b0870c, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: abe1fe1e6c99749468d893233f5803ad, type: 3}
 --- !u!1001 &8341006659360051205
