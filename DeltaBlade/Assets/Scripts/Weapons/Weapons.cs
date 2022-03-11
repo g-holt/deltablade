@@ -5,9 +5,11 @@ using UnityEngine;
 public class Weapons : MonoBehaviour
 {
     [SerializeField] WeaponType weaponType;
+    [SerializeField] float damage = 0f;
     
     AudioSource audioSource;
     WeaponCanvas weaponCanvas;
+    PlayerAttack playerAttack;
     CharacterWeaponSwitcher weaponSwitcher;
 
 
@@ -15,6 +17,8 @@ public class Weapons : MonoBehaviour
     {
         audioSource = GetComponent<AudioSource>();
         weaponCanvas = GetComponentInParent<WeaponCanvas>();
+        
+        playerAttack = FindObjectOfType<PlayerAttack>();
         weaponSwitcher = FindObjectOfType<CharacterWeaponSwitcher>();
     }
 
@@ -47,6 +51,12 @@ public class Weapons : MonoBehaviour
         
         GetComponentInChildren<SpriteRenderer>().enabled = false;
         Destroy(gameObject, audioSource.clip.length);
+    }
+
+
+    float GetDamage()
+    {
+        return damage;
     }
 
 }

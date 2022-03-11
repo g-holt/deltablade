@@ -5,6 +5,9 @@ using UnityEngine.InputSystem;
 
 public class CharacterWeaponSwitcher : MonoBehaviour
 {
+    [SerializeField] float swordDamage = 5f;
+    [SerializeField] float axeDamage = 10f;
+
     public WeaponType currentWeapon; 
 
     public bool hasSword;
@@ -19,6 +22,7 @@ public class CharacterWeaponSwitcher : MonoBehaviour
     {
         hasAxe = false;
         hasSword = false;
+
         playerMovement = GetComponentInParent<PlayerMovement>();
         playerAttack = GetComponentInParent<PlayerAttack>();
 
@@ -60,6 +64,7 @@ public class CharacterWeaponSwitcher : MonoBehaviour
             if(weaponTypeIndex == currentWeapon)
             {
                 SwapCharacter(character);
+                SetDamage(weaponTypeIndex);
 
                 if(weaponTypeIndex == 0)
                 {
@@ -68,6 +73,7 @@ public class CharacterWeaponSwitcher : MonoBehaviour
                 }
                 else
                 {
+
                     playerMovement.isDisarmed = false;
                     playerAttack.isDisarmed = false;
                 }
@@ -90,6 +96,19 @@ public class CharacterWeaponSwitcher : MonoBehaviour
         animator.enabled = true;
         playerMovement.SetAnimator(animator);
         playerAttack.SetAnimator(animator);
+    }
+
+
+    void SetDamage(WeaponType weapon)
+    {
+        if(weapon == (WeaponType)1)
+        {
+            playerAttack.SetDamage(swordDamage);   
+        }
+        else if(weapon == (WeaponType)2) 
+        {
+            playerAttack.SetDamage(axeDamage);
+        }
     }
 
 

@@ -6,15 +6,16 @@ public class PlayerAttack : MonoBehaviour
 {
     [SerializeField] AudioClip weaponSwing;
     [SerializeField] AudioClip weaponHit;  
-    [SerializeField] float damage = 10f;
-
+    
     Animator animator;
     EnemyHealth enemyHealth;
     AudioSource audioSource;
 
+    public float damage = 0f;
     public bool canDamage; 
     public bool isDisarmed;
     public bool isAlive;
+
 
 
     void Start() 
@@ -72,6 +73,12 @@ public class PlayerAttack : MonoBehaviour
     public void SetAnimator(Animator animator)
     {
         this.animator = animator;
+    }
+
+
+    public void SetDamage(float damage)
+    {
+        this.damage = damage;
     }
 
 }
