@@ -1,2 +1,2 @@
 # deltablade
-2D Dungeon Crawler
+2D Platformer
