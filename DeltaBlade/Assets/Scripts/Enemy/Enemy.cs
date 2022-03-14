@@ -103,15 +103,7 @@ public class Enemy : MonoBehaviour
     }
 
 
-    void AttackPlayer(Transform player)
-    {
-        if (player == null) { return; }
-        if(!canMove) { return; }
-
-        animator.SetBool("attack", true);
-    }
-
-
+    //Animation Event - Enemy Attack Animation
     void DelayAttack()
     {
         StartCoroutine("DelayNextAttack");
@@ -128,7 +120,15 @@ public class Enemy : MonoBehaviour
         {
             AttackPlayer(player);
         }
+    }
 
+
+    void AttackPlayer(Transform player)
+    {
+        if (player == null) { return; }
+        if(!canMove) { return; }
+
+        animator.SetBool("attack", true);
     }
 
 
@@ -144,6 +144,7 @@ public class Enemy : MonoBehaviour
 
         if (moveDirection != 0)
         {
+            //Checking which side of the player the enemy is colliding return if facing player, flip if not facing player
             if (playerOnRight && moveDirection > 0) { return; }
             if (!playerOnRight && moveDirection < 0) { return; }
 
@@ -153,7 +154,7 @@ public class Enemy : MonoBehaviour
     }
 
 
-    //Animation Event
+    //Animation Event - Enemy Attack Animation
     void DamagePlayer()
     {
         if(!isAttacking) { return; }
@@ -176,19 +177,3 @@ public class Enemy : MonoBehaviour
     }
 
 }
-
-/*
-
-***** 1 *****
-    
-    moveDirection - Positive or Negative value == player and enemy facing the same direction; if 0 then they are facing each other
-    Player and Enemy localScale.x should be the same base number 
-        moveDirection = player.localScale.x + transform.localScale.x;
-    
-
-    Checking if the enemy is colliding with the back of the player if so don't flip;
-        if (playerOnRight && moveDirection > 0) { return; }
-        if (!playerOnRight && moveDirection < 0) { return; }
-    
-
-*/

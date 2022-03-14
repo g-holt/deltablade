@@ -60,7 +60,7 @@ public class PlayerMovement : MonoBehaviour
 
         if(other.gameObject.CompareTag("Hazards"))
         {
-            playerHealth.SetHealth(0);
+            playerHealth.SetHealthZero();
             playerHealth.PlayerDeath();
         }
     }
@@ -72,6 +72,7 @@ public class PlayerMovement : MonoBehaviour
 
         if(Mouse.current.rightButton.isPressed && !isDisarmed)
         {
+            //Continues through jump and when on ground again if shield button is pressed and the player is not disarmed activate shield
             ShieldUp();
         }
     }
@@ -108,8 +109,6 @@ public class PlayerMovement : MonoBehaviour
     void OnJump(InputValue value)
     {
         if(!isAlive) { return; } 
-
-        /* 2 */
         if(!TouchingLayer(myFeetCollider, "Ground")) { return; }
         if(!value.isPressed) { return; } 
         
@@ -164,7 +163,6 @@ public class PlayerMovement : MonoBehaviour
 
     void FlipSprite()
     {
-        /* 1 */
         bool hasHorizontalSpeed = Mathf.Abs(rb.velocity.x) > Mathf.Epsilon;
         
         if(hasHorizontalSpeed)
@@ -209,31 +207,4 @@ public class PlayerMovement : MonoBehaviour
     }
 
 }
-
-
-/*
-
-***** 1 *****
-    Our rb.velocity.x is either 5 or -5 since our moveInput is 1 or -1 multiplied by our moveSpeed of 5
-    We're checking bool hasHorizontal speed(X Velocity) against Mathf.Epsilon which is the smallest value a float can have that isn't 0
-    Since we're using Mathf.Abs() either way we move 5 or -5 will be 5 since it's checking the absolute value so as long as we have
-    horizontal input from the play hasHorizontalSpeed will be true
-
-    From that we're checking if hasHorizontalSpeed is true; if(hasHorizontalSpeed); if so then then were setting the localScale X to
-    the ~SIGN~ of the Velocity(Direction we're moving 5 or -5); so moving left changes localScale to -1 and moving right changes localScale
-    to 1 effectively flipping the sprite to the correct direction
-
-
-***** 2 *****
-    Checking if the 2D Box Collider we have on the players feet is touching tiles with the 'Ground' Layer if not return so we can't 
-    continue to jump; then confirming the Jump button is pressed, if not return;
-
-    ~~~~ The myFeetCollider is set up so that the width is slightly smaller the width of our circle collider that represents the main
-    portion of the player so when the player runs into walls which tiles are also set up with the 'Ground' Layer the circle collider 
-    stops the player and does not allow the myFeetCollider to touch the tiles, which does not allow the player to jump and climb up 
-    the walls;
-
-
-*/
-
 

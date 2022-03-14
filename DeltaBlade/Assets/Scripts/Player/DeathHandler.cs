@@ -5,8 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class DeathHandler : MonoBehaviour
 {
-    
     public Canvas gameOverCanvas;
+    
     GameObject gameOverGameObj;
 
     int currentSceneIndex;
@@ -15,7 +15,6 @@ public class DeathHandler : MonoBehaviour
     void Start()
     {
         gameOverGameObj = GameObject.FindGameObjectWithTag("GameOverCanvas");
-
         gameOverCanvas = gameOverGameObj.gameObject.GetComponent<Canvas>();
         
         gameOverCanvas.enabled = false;        

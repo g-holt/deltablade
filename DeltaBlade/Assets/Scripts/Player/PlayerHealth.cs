@@ -26,17 +26,17 @@ public class PlayerHealth : MonoBehaviour
 
     void Start()
     {   
-        sceneLoader = FindObjectOfType<SceneLoader>();
-
         animator = GetComponent<Animator>();
         audioSource = GetComponent<AudioSource>();
         deathHandler = GetComponent<DeathHandler>();
         playerAttack = GetComponent<PlayerAttack>();
         playerMovement = GetComponent<PlayerMovement>();
         playerCanvasScript = GetComponent<PlayerCanvas>();
+        
+        sceneLoader = FindObjectOfType<SceneLoader>();
         healthText = GameObject.FindGameObjectWithTag("Player Health").GetComponent<TextMeshProUGUI>();
 
-        healthText.text = health.ToString();
+        healthText.text = "Health: " + health.ToString();
     }
 
 
@@ -48,7 +48,7 @@ public class PlayerHealth : MonoBehaviour
         }
 
         health -= damage;
-        healthText.text = health.ToString();
+        healthText.text = "Health: " + health.ToString();
 
         if(health <= 0)
         {
@@ -76,7 +76,6 @@ public class PlayerHealth : MonoBehaviour
         }
         else
         {
-
             StartCoroutine("ResetLevel");
         }
     }
@@ -98,7 +97,7 @@ public class PlayerHealth : MonoBehaviour
     }
 
 
-    public void SetHealth(float setHealth)
+    public void SetHealthZero()
     {
         ReduceHealth(health);
     }

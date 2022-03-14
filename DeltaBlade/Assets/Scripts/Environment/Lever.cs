@@ -19,6 +19,7 @@ public class Lever : MonoBehaviour
         leverNotPulled.SetActive(true);    
 
         exitDoor = FindObjectOfType<ExitDoor>();
+
         audioSource = GetComponent<AudioSource>();
         leverCollider = GetComponent<BoxCollider2D>();
     }
@@ -34,4 +35,5 @@ public class Lever : MonoBehaviour
 
         exitDoor.OpenDoor();
     }
+    
 }

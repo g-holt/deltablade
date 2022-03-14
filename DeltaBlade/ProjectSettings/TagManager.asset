@@ -21,6 +21,8 @@ TagManager:
   - WeaponCanvas
   - Player Health
   - Stars
+  - PauseCanvas
+  - Pause GO
   layers:
   - Default
   - TransparentFX

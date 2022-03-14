@@ -65,6 +65,7 @@ public class PlayerCanvas : MonoBehaviour
 
     public void SetImagesActive()
     {
+        //Set all images active when game resets
         foreach(Transform image in playerCanvas.transform)
         {
             image.gameObject.SetActive(true);

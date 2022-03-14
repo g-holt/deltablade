@@ -47,6 +47,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e83da790c17b134da2d24582b1497e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  swordDamage: 5
+  axeDamage: 10
   currentWeapon: 0
   hasSword: 0
   hasAxe: 0
@@ -287,7 +289,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathClip: {fileID: 0}
   health: 100
-  shieldPercent: 0.75
+  shieldPercent: 0
   shieldUp: 0
   gameOver: 0
 --- !u!114 &3086649758224627607

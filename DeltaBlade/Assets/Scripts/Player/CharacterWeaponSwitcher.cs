@@ -42,10 +42,12 @@ public class CharacterWeaponSwitcher : MonoBehaviour
     {
         if(Keyboard.current.digit1Key.wasPressedThisFrame && hasSword)
         {
+            //Sword
             currentWeapon = (WeaponType)1;
         }
         else if(Keyboard.current.digit2Key.wasPressedThisFrame && hasAxe)
         {   
+            //Axe
             currentWeapon = (WeaponType)2;
         }
 
@@ -64,19 +66,8 @@ public class CharacterWeaponSwitcher : MonoBehaviour
             if(weaponTypeIndex == currentWeapon)
             {
                 SwapCharacter(character);
+                DisarmedCheck(weaponTypeIndex);
                 SetDamage(weaponTypeIndex);
-
-                if(weaponTypeIndex == 0)
-                {
-                    playerMovement.isDisarmed = true;
-                    playerAttack.isDisarmed = true;
-                }
-                else
-                {
-
-                    playerMovement.isDisarmed = false;
-                    playerAttack.isDisarmed = false;
-                }
             }
             else
             {
@@ -99,9 +90,29 @@ public class CharacterWeaponSwitcher : MonoBehaviour
     }
 
 
+    void DisarmedCheck(WeaponType weaponTypeIndex)
+    {
+        if(weaponTypeIndex == 0)
+        {
+            playerMovement.isDisarmed = true;
+            playerAttack.isDisarmed = true;
+        }
+        else
+        {
+            playerMovement.isDisarmed = false;
+            playerAttack.isDisarmed = false;
+        }
+    }
+
+
     void SetDamage(WeaponType weapon)
     {
-        if(weapon == (WeaponType)1)
+        if(weapon == (WeaponType)0)
+        {
+            //Disarmed
+            playerAttack.SetDamage(0f);
+        }
+        else if(weapon == (WeaponType)1)
         {
             playerAttack.SetDamage(swordDamage);   
         }

@@ -17,7 +17,6 @@ public class PlayerAttack : MonoBehaviour
     public bool isAlive;
 
 
-
     void Start() 
     {
         isAlive = true;    

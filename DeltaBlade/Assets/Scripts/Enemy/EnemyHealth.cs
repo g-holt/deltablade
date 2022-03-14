@@ -41,6 +41,7 @@ public class EnemyHealth : MonoBehaviour
     }
 
 
+    //Animation Event - Enemy Death
     void DestroyEnemy()
     {
         Destroy(gameObject);
