@@ -15854,6 +15854,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pause Menu Image
       objectReference: {fileID: 0}
+    - target: {fileID: 3656986300878160710, guid: f16917bb0c68bb54ebd1e74f4f21ce37, type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 1920
+      objectReference: {fileID: 0}
+    - target: {fileID: 3656986300878160710, guid: f16917bb0c68bb54ebd1e74f4f21ce37, type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 1080
+      objectReference: {fileID: 0}
     - target: {fileID: 3770392569699019287, guid: f16917bb0c68bb54ebd1e74f4f21ce37, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -15877,6 +15885,14 @@ PrefabInstance:
     - target: {fileID: 4435252453992346937, guid: f16917bb0c68bb54ebd1e74f4f21ce37, type: 3}
       propertyPath: m_SortingOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5078698129607145585, guid: f16917bb0c68bb54ebd1e74f4f21ce37, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -184.17212
+      objectReference: {fileID: 0}
+    - target: {fileID: 5078698129607145585, guid: f16917bb0c68bb54ebd1e74f4f21ce37, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -51.669067
       objectReference: {fileID: 0}
     - target: {fileID: 5427077916861309964, guid: f16917bb0c68bb54ebd1e74f4f21ce37, type: 3}
       propertyPath: m_Name
